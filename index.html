@@ -73,41 +73,43 @@
     </div>
 </div>
 <div id="main" class="content">
+    <!-- To drag description -->
+    <div id="container-toggle">
+        <span>Draggable:</span>
+        <input type="checkbox" id="toggle">
+        <label class="toggle-label" for="toggle"></label>
+    </div>
+
     <h3>Research Interests</h3>
     <ul>
         <li>
-            <div class="tooltip">
-                Knowledge Representation
-                <div class="tooltip-hover">
-                    <div class="tooltip-content">
-                        - Learning effective representations of data (e.g., knowledge graph and text)
-                        <br/>
-                        - Reasoning new things using the data representations
-                    </div>
+            <span class="tooltip">Knowledge Representation</span>
+            <div class="tooltip-hover">
+                <div class="tooltip-content">
+                    - Learning effective representations of data (e.g., knowledge graph and text)
+                    <br/>
+                    - Reasoning new things using the data representations
                 </div>
             </div>
         </li>
         <li>
-            <div class="tooltip">
-                Knowledge-enhanced NLP Applications
-                <div class="tooltip-hover">
-                    <div class="tooltip-content">
-                        - Enhancing language models to explicitly utilize external knowledge
-                    </div>
+            <span class="tooltip">Knowledge-enhanced NLP Applications</span>
+            <div class="tooltip-hover">
+                <div class="tooltip-content">
+                    - Enhancing language models to explicitly utilize external knowledge
                 </div>
             </div>
         </li>
         <li>
-            <div class="tooltip">
-                Information Retrieval & Recommendation
-                <div class="tooltip-hover">
-                    <div class="tooltip-content">
-                        - Ranking documents by their semantic relevance to a query text
-                        <br/>
-                        - Recommending items according to the preference of a user
-                    </div>
+            <span class="tooltip">Information Retrieval & Recommendation</span>
+            <div class="tooltip-hover">
+                <div class="tooltip-content">
+                    - Ranking documents by their semantic relevance to a query text
+                    <br/>
+                    - Recommending items according to the preference of a user
                 </div>
             </div>
+
         </li>
     </ul>
     <br/>
@@ -372,7 +374,49 @@
             </ul>
         </li>
 
+
         <li class="sparse-list">
+            <div class="tooltip">
+                <b>동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습</b>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        지식 그래프는 지식 표현을 위한 효과적인 데이터 모델로 실세계의 사실을 개체 및 개체 간의 의미적, 구조적 관계로 표현할 수 있음. 하지만 지식 그래프의 불완전성과 확장
+                        가능성을 고려하지 못하는 기존 학습 모델들로 인해 지속적으로 변화하는 현실을 반영하기 어려움. 이를 개선하기 위해 동적으로 진화하는 지식 그래프의 정보 품질 개선을 위한
+                        심층 표현학습 방법이 필요함
+                        <br/><br/>
+                        본 연구에서는 동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습 원천 기술개발을 위하여 총 3차년에 걸쳐 단계별 연구를 수행함. 1단계 연구는 기존에 보지
+                        못한 개체/관계가 추가되거나 기존 개체/관계가 변경되는 개방형 지식그래프를 대상으로 함. 새로 유입된 개체/관계를 일반화하고 타당성 판단(제로샷 추론)을 수행하기 위해
+                        유입된 사실과 공유하는 부가정보인 설명문, 개체 타입 등을 활용하여 벡터표현을 생성함. 2단계 연구는 개방형 지식그래프를 대상으로 제로샷 추론 수행 시, 새로 유입된 개체
+                        및 관계와 이웃한 그래프의 구조 정보를 분석 및 반영함. 이웃 정보에는 트리플의 타당성을 판단하는데 도움을 주는 연결 패턴 정보들이 들어있음. 3단계는 연속으로 새로운
+                        개체/관계가 유입되는 동적 진화형 지식그래프에서 안정적이고 확장가능한 벡터표현을 생성하기 위해 기존 표현학습 모델의 일부를 전이하여 새로운 모델을 개발함. 특히 벡터표현에
+                        불확실성을 포함시키면서, 그래프가 진화할 때마다 학습된 벡터표현을 점진적으로 갱신하는 방법을 연구함
+                        <br/><br/>The final goal of this study is to research about ''Deep Representation Learning for
+                        Improving the Information Quality of Dynamically Evolving Knowledge Graphs''. The first step of
+                        the study targets open knowledge graphs in which objects/relationships that have not been
+                        previously seen are added or existing objects/relationships are changed. In order to generalize
+                        the newly introduced object/relationship and perform validity judgment (zero shot inference),
+                        vector representation is generated using explanations and object types, which are additional
+                        information shared with the introduced facts. The study in the second stage analyzes and
+                        reflects the structural information of graphs adjacent to newly introduced objects and
+                        relationships when performing zero-shot inference on open knowledge graphs. Neighbor information
+                        contains connection pattern information that helps determine the validity of the triple. Step
+                        three develops a new model by transferring part of the existing representation learning model to
+                        generate stable and scalable vector representations in a dynamic evolutionary knowledge graph in
+                        which new objects/relations flow in successively. In particular, we study how to gradually
+                        update the learned vector representation whenever the graph evolves, including uncertainty in
+                        the vector representation.
+                    </div>
+                </div>
+            </div>
+            <span>, w/ 한국연구재단</span><br/>
+            <span class="small">Deep Representation Learning for Improving the Information Quality of Dynamically Evolving Knowledge Graphs</span>
+            <ul>
+                <li><b>Project Director</b>, 2019.06 - 2020.12</li>
+                <li>제로용/퓨샷 지식 추론 학습 모델 개용 (GCN 등 활용)</li>
+                <li>심층 표현 학습 기반 지식 추론 모델 개발</li>
+            </ul>
+        </li>
+        <li>
             <span data-text="지식 그래프는 지식 표현을 위한 효과적인 데이터 모델로 실세계의 사실을 개체 및 개체 간의 의미적, 구조적 관계로 표현할 수 있음. 하지만 지식 그래프의 불완전성과 확장 가능성을 고려하지 못하는 기존 학습 모델들로 인해 지속적으로 변화하는 현실을 반영하기 어려움. 이를 개선하기 위해 동적으로 진화하는 지식 그래프의 정보 품질 개선을 위한 심층 표현학습 방법이 필요함&#10&#10본 연구에서는 동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습 원천 기술개발을 위하여 총 3차년에 걸쳐 단계별 연구를 수행함. 1단계 연구는 기존에 보지 못한 개체/관계가 추가되거나 기존 개체/관계가 변경되는 개방형 지식그래프를 대상으로 함. 새로 유입된 개체/관계를 일반화하고 타당성 판단(제로샷 추론)을 수행하기 위해 유입된 사실과 공유하는 부가정보인 설명문, 개체 타입 등을 활용하여 벡터표현을 생성함. 2단계 연구는 개방형 지식그래프를 대상으로 제로샷 추론 수행 시, 새로 유입된 개체 및 관계와 이웃한 그래프의 구조 정보를 분석 및 반영함. 이웃 정보에는 트리플의 타당성을 판단하는데 도움을 주는 연결 패턴 정보들이 들어있음. 3단계는 연속으로 새로운 개체/관계가 유입되는 동적 진화형 지식그래프에서 안정적이고 확장가능한 벡터표현을 생성하기 위해 기존 표현학습 모델의 일부를 전이하여 새로운 모델을 개발함. 특히 벡터표현에 불확실성을 포함시키면서, 그래프가 진화할 때마다 학습된 벡터표현을 점진적으로 갱신하는 방법을 연구함&#10&#10The final goal of this study is to research about ''Deep Representation Learning for Improving the Information Quality of Dynamically Evolving Knowledge Graphs''. The first step of the study targets open knowledge graphs in which objects/relationships that have not been previously seen are added or existing objects/relationships are changed. In order to generalize the newly introduced object/relationship and perform validity judgment (zero shot inference), vector representation is generated using explanations and object types, which are additional information shared with the introduced facts. The study in the second stage analyzes and reflects the structural information of graphs adjacent to newly introduced objects and relationships when performing zero-shot inference on open knowledge graphs. Neighbor information contains connection pattern information that helps determine the validity of the triple. Step three develops a new model by transferring part of the existing representation learning model to generate stable and scalable vector representations in a dynamic evolutionary knowledge graph in which new objects/relations flow in successively. In particular, we study how to gradually update the learned vector representation whenever the graph evolves, including uncertainty in the vector representation."
                   class="tooltip"><b>동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습</b></span>, w/ 한국연구재단<br/>
             <span class="small">Deep Representation Learning for Improving the Information Quality of Dynamically Evolving Knowledge Graphs</span>
@@ -482,42 +526,38 @@
     </ul>
 </div>
 
-<script type="text/javascript">
+<script>
     // http://youngwoon.github.io/
-    more_news = 0
+    // more_news = 0
+    // function newsMore() {
+    //     let items;
+    //     if (more_news === 1) {
+    //         document.getElementById("more_button").innerHTML = "Show less";
+    //         items = document.getElementsByClassName("more-item");
+    //         for (i = 0; i < items.length; i++) {
+    //             items[i].style.display = "list-item";
+    //         }
+    //     } else {
+    //         document.getElementById("more_button").innerHTML = "Show all";
+    //         items = document.getElementsByClassName("more-item");
+    //         for (i = 0; i < items.length; i++) {
+    //             items[i].style.display = "none";
+    //         }
+    //     }
+    //     more_news = 1 - more_news;
+    // }
+    //
+    // newsMore();
 
-    function newsMore() {
-        let items;
-        if (more_news === 1) {
-            document.getElementById("more_button").innerHTML = "Show less";
-            items = document.getElementsByClassName("more-item");
-            for (i = 0; i < items.length; i++) {
-                items[i].style.display = "list-item";
-            }
+    document.getElementById('toggle').addEventListener('change', function() {
+        if (this.checked) {
+            console.log('Toggle is ON');
+            document.documentElement.style.setProperty('--main-tooltip-display', 'block');
         } else {
-            document.getElementById("more_button").innerHTML = "Show all";
-            items = document.getElementsByClassName("more-item");
-            for (i = 0; i < items.length; i++) {
-                items[i].style.display = "none";
-            }
+            console.log('Toggle is OFF');
+            document.documentElement.style.setProperty('--main-tooltip-display', 'none');
         }
-        more_news = 1 - more_news;
-    }
-
-    newsMore();
-
-    function showHidden(element) {
-        // Find the child with the 'hidden' class
-        const hiddenDiv = element.querySelector('.tooltip-content');
-        if (hiddenDiv) {
-            // Toggle its visibility
-            if (hiddenDiv.style.display === "none") {
-                hiddenDiv.style.display = "block";
-            } else {
-                hiddenDiv.style.display = "none";
-            }
-        }
-    }
+    });
 </script>
 </body>
 </html>

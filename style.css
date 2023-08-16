@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Roboto&display=swap');
 
+:root {
+    --main-tooltip-display: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -13,6 +17,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     margin: 0 0 20px;
+    display: flex;
 }
 
 p, table, pre, dl {
@@ -49,6 +54,59 @@ b {
     font-weight: 500;
 }
 
+/* ==================== TOGGLE ==================== */
+#container-toggle {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+#container-toggle span {
+    padding-right: 5px;
+}
+
+/* Hide the checkbox input */
+#toggle {
+    display: none;
+}
+
+/* Toggle button style */
+.toggle-label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Toggle button circle */
+.toggle-label::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+/* When the checkbox is checked, adjust the style */
+#toggle:checked + .toggle-label {
+    background-color: #035384;
+}
+
+#toggle:checked + .toggle-label::before {
+    left: 27px;
+}
+
+/* ================================================ */
+
+
 /* ==================== TOOLTIP ==================== */
 /* ToolTip: https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
 /* CSS data-content attribute escapes backslashes */
@@ -56,7 +114,8 @@ b {
 .tooltip {
     position: relative; /* making the .tooltip span a container for the tooltip text */
     border-bottom: 1px dashed #000; /* little indicater to indicate it's hoverable */
-    width: max-content;
+    /*width: max-content;*/
+    display: inline-block;
     cursor: help;
 }
 
@@ -82,15 +141,18 @@ b {
     /*transform: translateY(-50%);*/
 }
 
-.tooltip:hover .tooltip-hover {
+.tooltip:hover + .tooltip-hover { /* '+' means sibiling */
+    /* sibiling 형태로 작성해야 description 드래그 여부를 결정할 수 있음 */
     display: block;
     cursor: help;
 }
 
 .tooltip-hover:hover {
-    display: block;
+    /*display: block;  !* block의 경우에는 description이 드래그 가능해짐 *!*/
+    display: var(--main-tooltip-display);
     cursor: help;
 }
+
 /* ================================================= */
 
 /* ==================== HEADER ==================== */
@@ -159,6 +221,7 @@ b {
 #header #biography {
     font-size: 16px;
 }
+
 /* ================================================= */
 
 /* MAIN */
