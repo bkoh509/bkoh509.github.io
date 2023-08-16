@@ -75,7 +75,7 @@
 <div id="main" class="content">
     <!-- To drag description -->
     <div id="container-toggle">
-        <span>Draggable:</span>
+        <span>Enable to drag/copy:</span>
         <input type="checkbox" id="toggle">
         <label class="toggle-label" for="toggle"></label>
     </div>
@@ -549,7 +549,8 @@
     //
     // newsMore();
 
-    document.getElementById('toggle').addEventListener('change', function() {
+    // dragable/copyable
+    document.getElementById('toggle').addEventListener('change', function () {
         if (this.checked) {
             console.log('Toggle is ON');
             document.documentElement.style.setProperty('--main-tooltip-display', 'block');
@@ -557,6 +558,31 @@
             console.log('Toggle is OFF');
             document.documentElement.style.setProperty('--main-tooltip-display', 'none');
         }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const clickTargets = document.querySelectorAll('.tooltip');
+
+        clickTargets.forEach(target => {
+            target.addEventListener('click', function () {
+                let is_copied = document.documentElement.style.getPropertyValue('--main-tooltip-display');
+                if (is_copied === 'block') {
+                    const siblingToCopy = this.nextElementSibling; // Get the next sibling (.tooltip-hover)
+                    const textToCopy = siblingToCopy.querySelector(".tooltip-content").textContent;
+
+                    const tempInput = document.createElement('input');
+                    document.body.appendChild(tempInput);
+                    tempInput.value = textToCopy;
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+
+                    alert('Content copied to clipboard!');
+                } else {
+                    alert('Content do not copy to clipboard!');
+                }
+            });
+        });
     });
 </script>
 </body>
