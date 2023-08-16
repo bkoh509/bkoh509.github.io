@@ -83,6 +83,7 @@ b {
     font-size: 0.9em;
     /*width: 400px;*/
     width: max-content;
+    max-width: 800px;
     padding: 10px;
     border-radius: 10px;
     background: #505050;
