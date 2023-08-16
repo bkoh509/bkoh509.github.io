@@ -64,13 +64,19 @@ b {
     content: attr(data-text); /* here's the magic */
     white-space: pre-wrap; /* enter in content ( &#10 is \A ) */
     position: absolute;
+    z-index: 2;
 
     /* vertically center */
-    top: 50%;
-    transform: translateY(-50%);
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
 
     /* move to right */
-    left: 100%;
+    /*left: 100%;*/
+    /*margin-left: 15px; !* and add a small left margin *!*/
+
+    /* CUSTOM */
+    top: 100%;
+    margin-top: 10px; /* and add a small left margin */
     margin-left: 15px; /* and add a small left margin */
 
     /* basic styles */
