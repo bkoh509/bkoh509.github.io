@@ -49,59 +49,51 @@ b {
     font-weight: 500;
 }
 
-/* ToolTip */
-/* https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
+/* ==================== TOOLTIP ==================== */
+/* ToolTip: https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
+/* CSS data-content attribute escapes backslashes */
+/* https://stackoverflow.com/questions/31011660/css-data-content-attribute-escapes-backslashes*/
 .tooltip {
     position: relative; /* making the .tooltip span a container for the tooltip text */
     border-bottom: 1px dashed #000; /* little indicater to indicate it's hoverable */
+    width: max-content;
+    cursor: help;
 }
 
-.tooltip:before {
-    /*
-    CSS data-content attribute escapes backslashes
-    https://stackoverflow.com/questions/31011660/css-data-content-attribute-escapes-backslashes
-    */
-    content: attr(data-text); /* here's the magic */
-    white-space: pre-wrap; /* enter in content ( &#10 is \A ) */
-    position: absolute;
-    z-index: 2;
+.tooltip-hover {
+    position: absolute; /* 다른 element와 겹쳐지도록 */
+    z-index: 2; /* 맨 위로 */
+    padding-top: 10px;
+    margin-left: 15px;
+    display: none;
+}
 
-    /* vertically center */
-    /*top: 50%;*/
-    /*transform: translateY(-50%);*/
-
-    /* move to right */
-    /*left: 100%;*/
-    /*margin-left: 15px; !* and add a small left margin *!*/
-
-    /* CUSTOM */
-    top: 100%;
-    margin-top: 10px; /* and add a small left margin */
-    margin-left: 15px; /* and add a small left margin */
-
-    /* basic styles */
+.tooltip-content {
     font-size: 0.9em;
-    /*width: 400px;*/
     width: max-content;
     max-width: 800px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     background: #505050;
     color: #fff;
-    /*text-align:center;*/
 
-    /* the arrow */
-    /*border: 10px solid #000;*/
-    /*border-color: transparent black transparent transparent;*/
-
-    display: none; /* hide by default */
+    /*!*vertically center*!*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
 }
 
-.tooltip:hover:before, .tooltip:hover:after {
+.tooltip:hover .tooltip-hover {
     display: block;
+    cursor: help;
 }
 
-/* HEADER */
+.tooltip-hover:hover {
+    display: block;
+    cursor: help;
+}
+/* ================================================= */
+
+/* ==================== HEADER ==================== */
 .quote {
     font-size: 1em;
     font-weight: 500;
@@ -167,6 +159,7 @@ b {
 #header #biography {
     font-size: 16px;
 }
+/* ================================================= */
 
 /* MAIN */
 .content {

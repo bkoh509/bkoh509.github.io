@@ -76,16 +76,38 @@
     <h3>Research Interests</h3>
     <ul>
         <li>
-            <span data-text="- Learning effective representations of data (e.g., knowledge graph and text)&#10- Reasoning new things using the data representations"
-                  class="tooltip">Knowledge Representation</span>
+            <div class="tooltip">
+                Knowledge Representation
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        - Learning effective representations of data (e.g., knowledge graph and text)
+                        <br/>
+                        - Reasoning new things using the data representations
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            <span data-text="- Enhancing language models to explicitly utilize external knowledge"
-                  class="tooltip">Knowledge-enhanced NLP Applications</span>
+            <div class="tooltip">
+                Knowledge-enhanced NLP Applications
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        - Enhancing language models to explicitly utilize external knowledge
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            <span data-text="- Ranking documents by their semantic relevance to a query text&#10- Recommending items according to the preference of a user"
-                  class="tooltip">Information Retrieval & Recommendation</span>
+            <div class="tooltip">
+                Information Retrieval & Recommendation
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        - Ranking documents by their semantic relevance to a query text
+                        <br/>
+                        - Recommending items according to the preference of a user
+                    </div>
+                </div>
+            </div>
         </li>
     </ul>
     <br/>
@@ -341,7 +363,8 @@
         </li>
         <li class="sparse-list">
             <span data-text="본 연구에서는 세밀한 사용자 의도 모델링 기술을 제안함으로써, 정교한 관계별 개체 정보와 의도 구성 요소에 대한 사용자 선호를 반영하여 사용자들의 유의미한 상호작용 의도를 추출함. 이는 사용자 개개인의 선호도를 세밀하게 표현하는 개인 추천시스템에서 사용자의 선호 의도를 설명할 수 있는 기준이 됨. 또한, 생성된 상호작용 의도를 기준으로 구별된 성격을 가지는 커뮤니티를 탐지함. 이는 모델 검증에 사용된 도메인뿐만 아니라, 사용자가 특정 대상과 상호작용하는 다양한 도메인의 네트워크로의 확장 및 활용이 가능할 것임. 단순히 유의미한 커뮤니티를 탐지하는 데에 그치지 않고 커뮤니티 내의 사용자들의 공통적인 의도를 파악하여 커뮤니티 구성에 대한 설명성을 제공함"
-                  class="tooltip"><b>지식그래프 기반 사용자 의도 및 커뮤니티 탐색 기술</b></span>, w/ Yonsei University (Prof. Kyong-Ho Lee)<br/>
+                  class="tooltip"><b>지식그래프 기반 사용자 의도 및 커뮤니티 탐색 기술</b></span>, w/ Yonsei University (Prof. Kyong-Ho
+            Lee)<br/>
             <span class="small">Knowledge Graph based Intent-Community Detection</span>
             <ul>
                 <li><b>Project Leader</b>, 2021.12 - 2022.12</li>
@@ -482,6 +505,19 @@
     }
 
     newsMore();
+
+    function showHidden(element) {
+        // Find the child with the 'hidden' class
+        const hiddenDiv = element.querySelector('.tooltip-content');
+        if (hiddenDiv) {
+            // Toggle its visibility
+            if (hiddenDiv.style.display === "none") {
+                hiddenDiv.style.display = "block";
+            } else {
+                hiddenDiv.style.display = "none";
+            }
+        }
+    }
 </script>
 </body>
 </html>
