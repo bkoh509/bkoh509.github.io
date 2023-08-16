@@ -10,12 +10,52 @@ body {
     background: #f7f7f7;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    margin: 0 0 20px;
+}
+
+p, table, pre, dl {
+    margin: 0 0 20px;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    color: #393939;
+}
+
+h3, h4, h5, h6 {
+    color: #494949;
+}
+
+a {
+    color: #39c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0f5a80;
+    text-decoration: underline;
+}
+
+b {
+    font-weight: 500;
+}
+
 /* ToolTip */
 /* https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
 .tooltip {
     position: relative; /* making the .tooltip span a container for the tooltip text */
     border-bottom: 1px dashed #000; /* little indicater to indicate it's hoverable */
 }
+
 .tooltip:before {
     /*
     CSS data-content attribute escapes backslashes
@@ -49,22 +89,55 @@ body {
 
     display: none; /* hide by default */
 }
+
 .tooltip:hover:before, .tooltip:hover:after {
     display: block;
 }
 
 /* HEADER */
+.quote {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.quote::before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 15px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
+.quote::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 20px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
 #header {
     margin-top: 10px;
     margin-bottom: 20px;
     border-top: 18px solid #035384;
     border-bottom: 18px solid #035384;
-
+    /*display: flex;*/
 }
 
 #profile {
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 
 #header.content {
@@ -73,14 +146,19 @@ body {
 }
 
 #header-info {
-    flex: 1 0 auto
+    flex: 1 0 auto;
+    width: auto;
 }
 
 #header img {
-    flex: 1 0 0;
+    /*flex: 1 0 0;*/
     width: auto;
-    height: 200px;
+    height: 180px;
     margin: 15px;
+}
+
+#header #biography {
+    font-size: 16px;
 }
 
 /* MAIN */
@@ -94,12 +172,15 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
+
 .content#main {
     font-size: 16px;
 }
+
 .content h3 {
     position: relative;
 }
+
 .content h3:after {
     content: "";
     position: absolute;
@@ -110,53 +191,16 @@ body {
     background-color: #1378b2;
     display: block;
 }
-.content .sparse-list{
+
+.content .sparse-list {
     padding-bottom: 15px;
 }
-.content .sparse-list:last-child{
+
+.content .sparse-list:last-child {
     padding-bottom: 0;
 }
+
 .content .small {
     margin-top: -50px;
     font-size: 0.8em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    margin: 0 0 20px;
-}
-
-p, table, pre, dl {
-    margin: 0 0 20px;
-}
-
-h1, h2, h3 {
-    line-height: 1.1;
-}
-
-h1 {
-    font-size: 26px;
-}
-
-h2 {
-    color: #393939;
-}
-
-h3, h4, h5, h6 {
-    color: #494949;
-}
-
-a {
-    color: #39c;
-    font-weight: 300;
-    text-decoration: none;
-}
-a:hover {
-    color: #0f5a80;
-    font-weight: 300;
-    text-decoration: underline;
-}
-
-b {
-    font-weight: 500;
 }

@@ -2,11 +2,14 @@
 
 ## Biography
 
-I am currently working toward a Ph.D degree in Computer Science.
-My research focus on Knowledge Graphs & Natural Language Processing.
+I am a research scientist (NLP/Data) at Samsung Research (R&D Center). <br>
+Previously, I received Ph.D. in the Department of Computer Science at Yonsei University,
+<a href="http://icl.yonsei.ac.kr">Internet Computing Lab (ICL)</a>,
+advised by Prof. Kyong-Ho Lee (Yonsei University).
 
 
+---
 
-ETC
+## ETC
 
 - Favicon Generator: https://redketchup.io/favicon-generator
