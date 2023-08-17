@@ -4,9 +4,6 @@
 
 ## Biography
 
-
-## Biography
-
 Hello! I am a research scientist (NLP/Data) at Samsung Research. Previously, I received Ph.D. in Computer
 Science at Yonsei University, <a href="http://icl.yonsei.ac.kr">Internet Computing Lab (ICL)</a>, advised by
 Prof. Kyong-Ho Lee. After completing my Ph.D., I worked as a postdoctoral researcher at Yonsei University
