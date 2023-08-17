@@ -278,11 +278,11 @@ b {
   display: none;
   min-width: 50px;
   margin-left: -25px; /* width 절반 */
-  background-color: #505050;
+  background-color: #035384;
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: 10px 16px;
+  padding: 8px 16px;
   position: fixed;
   z-index: 1;
   left: 50%;
