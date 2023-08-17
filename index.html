@@ -553,6 +553,7 @@
     </ul>
 </div>
 
+<div id="snackbar">Copied</div>
 <div class="footnotes">
     If you want to use this template, please cite <a href="https://github.com/bkoh509/bkoh509.github.io">this</a>.
 </div>
@@ -580,6 +581,12 @@
     //
     // newsMore();
 
+    function snackbar() {
+      const x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
+    }
+    
     // dragable/copyable
     document.getElementById('toggle').addEventListener('change', function () {
         if (this.checked) {
@@ -609,6 +616,7 @@
                     document.execCommand('copy');
                     document.body.removeChild(tempInput);
 
+                    snackbar()
                     // alert('Content copied to clipboard!');
                 } else {
                     // alert('Content do not copy to clipboard!');
