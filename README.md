@@ -19,9 +19,8 @@ classification, prediction, retrieval, data generation).
 
 ## TODO
 
-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-- https://www.w3schools.com/howto/howto_js_snackbar.asp
-
 ## ETC
 
 - Favicon Generator: https://redketchup.io/favicon-generator
+- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+- https://www.w3schools.com/howto/howto_js_snackbar.asp
