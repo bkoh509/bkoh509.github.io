@@ -309,8 +309,8 @@ b {
   display: none;
   font-size: 2rem;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 5%;
+  right: 5%;
   z-index: 99;
   cursor: pointer;
   color: #035384;
