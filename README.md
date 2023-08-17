@@ -1,6 +1,6 @@
 # [bkoh509.github.io](https://bkoh509.github.io)
 
-> If you want to use this template, this repository (bkoh509.githob.it) must be cited.
+> If you want to use this template, please cite this repository (bkoh509.githob.it).
 
 ## Biography
 
@@ -16,6 +16,11 @@ covered a wide range of data types (e.g., matrix/tensor, text, graph, time serie
 classification, prediction, retrieval, data generation).
 
 ---
+
+## TODO
+
+- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+- https://www.w3schools.com/howto/howto_js_snackbar.asp
 
 ## ETC
 
