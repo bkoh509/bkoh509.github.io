@@ -1,5 +1,10 @@
 # [bkoh509.github.io](https://bkoh509.github.io)
 
+> If you want to use this template, this repository (bkoh509.githob.it) must be cited.
+
+## Biography
+
+
 ## Biography
 
 Hello! I am a research scientist (NLP/Data) at Samsung Research. Previously, I received Ph.D. in Computer
