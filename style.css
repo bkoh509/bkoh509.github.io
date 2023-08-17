@@ -16,28 +16,49 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
-    margin: 0 0 20px;
+    margin: 0 0 20px !important;
     display: flex;
-}
-
-p, table, pre, dl {
-    margin: 0 0 20px;
-}
-
-h1, h2, h3 {
-    line-height: 1.1;
 }
 
 h1 {
     font-size: 26px;
+    color: #393939;
+    margin: 0 0 20px;
+    line-height: 1.1;
 }
 
 h2 {
-    color: #393939;
+    color: #494949;
+    position: relative;
+    line-height: 1.1;
+
+    /*display: block;*/
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #1378b2;
+    display: block;
 }
 
 h3, h4, h5, h6 {
     color: #494949;
+    margin: 0 0 10px;
+}
+
+p, table, pre, dl {
+    margin: 0 0 20px;
 }
 
 a {
@@ -243,21 +264,6 @@ b {
 
 .content#main {
     font-size: 16px;
-}
-
-.content h3 {
-    position: relative;
-}
-
-.content h3:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 70px;
-    height: 1px;
-    background-color: #1378b2;
-    display: block;
 }
 
 .content .sparse-list {
