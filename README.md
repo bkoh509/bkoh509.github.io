@@ -1,6 +1,6 @@
 # [bkoh509.github.io](https://bkoh509.github.io)
 
-> If you want to use this template, please cite this repository (bkoh509.githob.it).
+> 💡 If you want to use this template, please cite this repository ([bkoh509.github.io](https://bkoh509.github.io)).
 
 ## Biography
 
@@ -19,18 +19,26 @@ classification, prediction, retrieval, data generation).
 
 ## TODO
 
+-
+
 ## Credit
 
 - Font Awesome: https://fontawesome.com/
 - Favicon Generator: https://redketchup.io/favicon-generator
-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-- https://www.w3schools.com/howto/howto_js_snackbar.asp
+- Scroll-to-top: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+- Snackbar/Toast: https://www.w3schools.com/howto/howto_js_snackbar.asp
 
-This rule is important! To prevent the text from growing.
+## Trouble Shooting
 
-```
-/* ⭐핵심⭐ */
--moz-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
+### Automatically Growing Font Size
+
+This rule should be applied in order to prevent the text from growing.
+
+```css
+html, body {
+    /* ⭐핵심⭐ */
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 ```
