@@ -2,6 +2,7 @@
 
 :root {
     --main-tooltip-display: none;
+    text-size-adjust: none; /*⭐핵심⭐*/
 }
 
 html {
@@ -274,7 +275,7 @@ b {
     border-radius: 10px;
     background: #505050;
     color: #fff;
-
+    text-size-adjust: none; /*⭐핵심⭐*/
     /*!*vertically center*!*/
     /*top: 50%;*/
     /*transform: translateY(-50%);*/
