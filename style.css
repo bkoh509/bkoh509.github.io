@@ -34,21 +34,21 @@ body {
     margin: 20px auto;
 }
 
-.content#header {
+#header.content {
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.content#main {
+#main.content {
     font-size: 0.95em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     margin: 0 0 20px !important;
-    display: flex;
-    font-weight: 700;
+    /*display: flex;*/
+    font-weight: 700;;
 }
 
 h1 {
@@ -151,13 +151,14 @@ b {
 }
 
 #header-info {
+    /*flex-grow: 0;  !* 팽창지수: 여분의 free space가 있어도 폭이 저절로 늘어남 *!*/
+    /*flex-shrink: 0; !* 수축지수 *!*/
+    /*flex-basis: auto; !* 기준 사이즈 *!*/
+
     display: flex;
     align-items: center;
     height: 210px;
     width: auto;
-    flex-grow: 0;  /* 팽창지수: 여분의 free space가 있어도 폭이 저절로 늘어남 */
-    flex-shrink: 0; /* 수축지수 */
-    flex-basis: auto; /* 기준 사이즈 */
 
     /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
     @media screen and (max-device-width: 800px) {
@@ -166,13 +167,19 @@ b {
 }
 
 #header img {;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 0; /* 기준 사이즈 */
+    /*flex-grow: 0;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: 0; !* 기준 사이즈 *!*/
+
     width: auto;
     height: 180px;
     margin: 15px;
     float: right;
+
+    /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
+    @media screen and (max-device-width: 800px) {
+        height: 200px;
+    }
 }
 
 #header #biography {
