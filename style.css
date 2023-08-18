@@ -2,7 +2,6 @@
 
 :root {
     --main-tooltip-display: none;
-    text-size-adjust: none; /*⭐핵심⭐*/
 }
 
 html {
@@ -138,15 +137,38 @@ b {
     display: flex;
     align-items: center;
     flex-direction: row; /*가로 배치*/
-    flex-wrap: nowrap; /*내용물이 안 넘어 가도록*/
+    /*flex-wrap: nowrap;*/ /*내용물이 안 넘어 가도록*/
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    overflow: hidden; /* 내용물이 넘어갈 때 다른 div안에 숨겨지도록 */
+    max-height: 210px; /* height를 고정해야 내용물이 넘어갈때 #profile이 같이 안 커짐 */
+
+     /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
+    @media screen and (max-device-width: 800px) {
+        max-height: 240px;
+    }
 }
 
 #header-info {
+    display: flex;
+    align-items: center;
+    height: 210px;
     width: auto;
+    flex-grow: 0;  /* 팽창지수: 여분의 free space가 있어도 폭이 저절로 늘어남 */
+    flex-shrink: 0; /* 수축지수 */
+    flex-basis: auto; /* 기준 사이즈 */
+
+    /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
+    @media screen and (max-device-width: 800px) {
+        height: 240px;
+    }
 }
 
-#header img {
+#header img {;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0; /* 기준 사이즈 */
     width: auto;
     height: 180px;
     margin: 15px;
