@@ -311,6 +311,11 @@ b {
     /*transform: translateY(-50%);*/
 }
 
+/* 터치폰에서는 hover가 작동 안 하도록 */
+/*@media(hover: hover) and (pointer: fine) {*/
+/*}*/
+
+/* 툴팁이 hover될 때, tooltip-hover 요소는 다음과 같은 속성을 가짐 */
 .tooltip:hover ~ .tooltip-hover {
     /* '+' means sibiling */
     /* '~' means more flexible sibiling */
@@ -320,10 +325,10 @@ b {
 }
 
 .tooltip-hover:hover {
-    /*display: block;  !* block의 경우에는 description이 드래그 가능해짐 *!*/
-    display: var(--main-tooltip-display);
-    cursor: help;
-}
+        /*display: block;  !* block의 경우에는 description이 드래그 가능해짐 *!*/
+        display: var(--main-tooltip-display);
+        cursor: help;
+    }
 /* ================================================= */
 
 
