@@ -25,3 +25,12 @@ classification, prediction, retrieval, data generation).
 - Favicon Generator: https://redketchup.io/favicon-generator
 - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 - https://www.w3schools.com/howto/howto_js_snackbar.asp
+
+This rule is important! To prevent the text from growing.
+
+```
+/* ⭐핵심⭐ */
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+```
