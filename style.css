@@ -14,7 +14,11 @@ html {
         font-size: 25px;
     }
 
-    text-size-adjust: 100%; /*⭐핵심⭐*/
+    /* ⭐핵심⭐ */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    /*text-size-adjust: 100%;*/
 }
 
 body {
