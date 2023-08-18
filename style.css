@@ -4,14 +4,43 @@
     --main-tooltip-display: none;
 }
 
+html {
+    font-family: 'Noto Sans KR', 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 17px; /* recommended */
+    font-weight: 300;
+
+    /*max-width를 사용하는 경우*/
+    /*데스크탑용의 가장 큰 화면 사이즈의 레이아웃을 기본으로 하고, 점차 축소하는 형태로 CSS를 작성합니다.*/
+    @media screen and (max-width: 800px) { /* 800px 이하인 경우 */
+        font-size: 14px;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Noto Sans KR', 'Roboto', Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 300;
     color: #333;
     background: #f7f7f7;
+}
+
+.content {
+    max-width: 850px;
+    background-color: #fff;
+    padding: 30px;
+    border-top: 15px solid #035384;
+    border-bottom: 15px solid #035384;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.content#header {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content#main {
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 1.5em;
     color: #393939;
     margin: 0 0 20px;
     line-height: 1.1;
@@ -181,6 +210,22 @@ b {
 
 /* ================================================= */
 
+/* MAIN */
+
+
+.content .sparse-list {
+    padding-bottom: 15px;
+}
+
+.content .sparse-list:last-child {
+    padding-bottom: 0;
+}
+
+.content .small {
+    margin-top: -50px;
+    font-size: 0.8em;
+}
+
 /* ==================== HEADER ==================== */
 .quote {
     font-size: 1em;
@@ -213,13 +258,6 @@ b {
     font-size: 2.5em;
 }
 
-#header {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-top: 18px solid #035384;
-    border-bottom: 18px solid #035384;
-    /*display: flex;*/
-}
 
 #profile {
     align-items: center;
@@ -227,10 +265,6 @@ b {
     justify-content: space-between;
 }
 
-#header.content {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 #header-info {
     flex: 1 0 auto;
@@ -250,76 +284,61 @@ b {
 
 /* ================================================= */
 
-/* MAIN */
-.content {
-    margin: 0 auto;
-    max-width: 850px;
-    background-color: #fff;
-    padding: 30px;
-    border-top: 18px solid #035384;
-    border-bottom: 18px solid #035384;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
 
-.content#main {
-    font-size: 16px;
-}
-
-.content .sparse-list {
-    padding-bottom: 15px;
-}
-
-.content .sparse-list:last-child {
-    padding-bottom: 0;
-}
-
-.content .small {
-    margin-top: -50px;
-    font-size: 0.8em;
-}
 /* ================================================= */
 
 #snackbar {
-  display: none;
-  min-width: 50px;
-  margin-left: -25px; /* width 절반 */
-  background-color: #505050;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 8px 16px;
-  position: fixed;
-  z-index: 10;
-  left: 50%;
-  bottom: 30px;
-  font-size: 16px;
+    display: none;
+    min-width: 50px;
+    margin-left: -25px; /* width 절반 */
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 16px;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    bottom: 30px;
+    font-size: 16px;
 }
 
 #snackbar.show {
-  display: block;
-  animation: fadein 0.5s, fadeout 0.5s 1.0s;
+    display: block;
+    animation: fadein 0.5s, fadeout 0.5s 1.0s;
 }
 
 @keyframes fadein {
-  from {bottom: 30px; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 30px;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 30px; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 30px;
+        opacity: 0;
+    }
 }
 
 #myBtn {
-  display: none;
-  font-size: 2rem;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  z-index: 99;
-  cursor: pointer;
-  color: #035384;
+    display: none;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    cursor: pointer;
+    color: #035384;
 }
 
 /* ================================================= */
