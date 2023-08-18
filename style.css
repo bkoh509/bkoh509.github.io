@@ -4,7 +4,12 @@
     --main-tooltip-display: none;
 }
 
-html {
+html, body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    background: #f7f7f7;
+
     font-family: 'Noto Sans KR', 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 17px; /* recommended */
     font-weight: 300;
@@ -15,17 +20,13 @@ html {
     }
 
     /* ⭐핵심⭐ */
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /*-moz-text-size-adjust: none;*/
+    /*-webkit-text-size-adjust: none;*/
+    /*text-size-adjust: none;*/
     /*text-size-adjust: 100%;*/
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    color: #333;
-    background: #f7f7f7;
 }
 
 .content {
