@@ -9,11 +9,12 @@ html {
     font-size: 17px; /* recommended */
     font-weight: 300;
 
-    /*max-width를 사용하는 경우*/
-    /*데스크탑용의 가장 큰 화면 사이즈의 레이아웃을 기본으로 하고, 점차 축소하는 형태로 CSS를 작성합니다.*/
-    @media screen and (max-width: 800px) { /* 800px 이하인 경우 */
-        font-size: 14px;
+    /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
+    @media screen and (max-device-width: 800px) {
+        font-size: 25px;
     }
+
+    text-size-adjust: none; /*⭐핵심⭐*/
 }
 
 body {
@@ -35,12 +36,12 @@ body {
 
 .content#header {
     margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .content#main {
-    font-size: 16px;
+    font-size: 0.95em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,6 +55,11 @@ h1 {
     color: #393939;
     margin: 0 0 20px;
     line-height: 1.1;
+
+    /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
+    @media screen and (max-device-width: 800px) {
+        font-size: 1.3em;
+    }
 }
 
 h2 {
@@ -68,6 +74,11 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+
+    /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
+    @media screen and (max-device-width: 800px) {
+        font-size: 1.1em;
+    }
 }
 
 h2:after {
@@ -88,6 +99,7 @@ h3, h4, h5, h6 {
 
 p, table, pre, dl {
     margin: 0 0 20px;
+    /*margin: 0;*/
 }
 
 a {
@@ -104,19 +116,78 @@ b {
     font-weight: 500;
 }
 
-/* ==================== TOGGLE ==================== */
-#container-toggle {
+/* ==================== HEADER ==================== */
+#profile {
     display: flex;
-    /*display: block;*/
     align-items: center;
-    /*justify-content: center;*/
-    float: right;
-    flex-wrap: wrap;
+    flex-direction: row; /*가로 배치*/
+    flex-wrap: nowrap; /*내용물이 안 넘어 가도록*/
+    justify-content: space-between;
 }
 
-#container-toggle span {
+#header-info {
+    width: auto;
+}
+
+#header img {
+    width: auto;
+    height: 180px;
+    margin: 15px;
+    float: right;
+}
+
+#header #biography {
+    font-size: 0.95em;
+}
+
+.quote {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.quote::before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 15px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
+.quote::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 20px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
+/* ================================================= */
+
+
+/* ==================== TOGGLE ==================== */
+#toggle-wrapper {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    float: right;
+    font-size: 0.9em;
+}
+
+#toggle-wrapper span {
+    position: relative;
     margin-right: 5px;
-    /*top: -10px;*/
+    /*margin-bottom: 51px;*/
+    top: -7px;
 }
 
 /* Hide the checkbox input */
@@ -177,13 +248,14 @@ b {
     z-index: 2; /* 맨 위로 */
     padding-top: 10px;
     margin-left: 20px;
+    margin-right: 20px;
     display: none;
 }
 
 .tooltip-content {
     font-size: 0.9em;
-    width: max-content;
-    max-width: 770px;
+    /*width: max-content;*/ /*화면 밖으로 나가는 경우가 발생함*/
+    max-width: 780px;
     padding: 10px 15px;
     border-radius: 10px;
     background: #505050;
@@ -226,64 +298,6 @@ b {
     font-size: 0.8em;
 }
 
-/* ==================== HEADER ==================== */
-.quote {
-    font-size: 1em;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.quote::before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 0;
-    position: relative;
-    top: 15px;
-    color: #ccc;
-    font-size: 2.5em;
-}
-
-.quote::after {
-    content: close-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 0;
-    position: relative;
-    top: 20px;
-    color: #ccc;
-    font-size: 2.5em;
-}
-
-
-#profile {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-#header-info {
-    flex: 1 0 auto;
-    width: auto;
-}
-
-#header img {
-    /*flex: 1 0 0;*/
-    width: auto;
-    height: 180px;
-    margin: 15px;
-}
-
-#header #biography {
-    font-size: 16px;
-}
-
-/* ================================================= */
-
 
 /* ================================================= */
 
@@ -300,7 +314,7 @@ b {
     z-index: 10;
     left: 50%;
     bottom: 30px;
-    font-size: 16px;
+    font-size: 0.95em;
 }
 
 #snackbar.show {
