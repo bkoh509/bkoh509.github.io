@@ -23,10 +23,6 @@ html, body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    /*-moz-text-size-adjust: none;*/
-    /*-webkit-text-size-adjust: none;*/
-    /*text-size-adjust: none;*/
-    /*text-size-adjust: 100%;*/
 }
 
 .content {
@@ -52,7 +48,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     margin: 0 0 20px !important;
-    /*display: flex;*/
+    display: flex;
     font-weight: 700;;
 }
 
@@ -231,6 +227,7 @@ b {
     /*justify-content: center;*/
     float: right;
     font-size: 0.9em;
+    z-index: 99;
 }
 
 #toggle-wrapper span {
@@ -309,7 +306,6 @@ b {
     border-radius: 10px;
     background: #505050;
     color: #fff;
-    text-size-adjust: none; /*⭐핵심⭐*/
     /*!*vertically center*!*/
     /*top: 50%;*/
     /*transform: translateY(-50%);*/
