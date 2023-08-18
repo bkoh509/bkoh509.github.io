@@ -47,16 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (is_copied === 'block') {
                 // const siblingToCopy = this.parent.nextElementSibling; // Get the next sibling (.tooltip-hover)
                 const siblingToCopy = this.parentElement
-                const textToCopy = siblingToCopy.querySelector(".tooltip-content").textContent;
+                // const textToCopy = siblingToCopy.querySelector(".tooltip-content").textContent;
+                const textToCopy = siblingToCopy.querySelector(".tooltip-content").innerText;
 
-                const tempInput = document.createElement('input');
-                document.body.appendChild(tempInput);
-                tempInput.value = textToCopy;
-                tempInput.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempInput);
+                window.navigator.clipboard.writeText(textToCopy).then(() => snackbar())
 
-                snackbar()
                 // alert('Content copied to clipboard!');
             } else {
                 // alert('Content do not copy to clipboard!');
