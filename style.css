@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Roboto&display=swap');
 
 :root {
     --main-tooltip-display: none;
@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
     margin: 0 0 20px !important;
     display: flex;
+    font-weight: 700;
 }
 
 h1 {
@@ -66,14 +67,7 @@ h2 {
     color: #494949;
     position: relative;
     line-height: 1.1;
-
-    /*display: block;*/
     font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
 
     /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
     @media screen and (max-device-width: 800px) {
