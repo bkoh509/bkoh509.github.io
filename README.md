@@ -19,8 +19,9 @@ classification, prediction, retrieval, data generation).
 
 ## TODO
 
-## ETC
+## Credit
 
+- Font Awesome: https://fontawesome.com/
 - Favicon Generator: https://redketchup.io/favicon-generator
 - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 - https://www.w3schools.com/howto/howto_js_snackbar.asp
