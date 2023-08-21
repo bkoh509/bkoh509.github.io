@@ -19,7 +19,7 @@ classification, prediction, retrieval, data generation).
 
 ## TODO
 
--
+- Filtering publications based on venue types
 
 ## Credit
 
@@ -30,7 +30,7 @@ classification, prediction, retrieval, data generation).
 
 ## Trouble Shooting
 
-### Automatically Growing Font Size
+### Prevent automatically Growing Font Size (Especially in Safari)
 
 This rule should be applied in order to prevent the text from growing.
 
