@@ -20,6 +20,9 @@ classification, prediction, retrieval, data generation).
 ## TODO
 
 - Filtering publications based on venue types
+- Add document-augmented LLM 
+- Add knowledge-grounded LLM
+- Switch to Next.js application
 
 ## Credit
 
