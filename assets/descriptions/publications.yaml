@@ -7,12 +7,12 @@
   - Heesoo Won, Byungkook Oh, Hyeongjun Yang, and Kyong-Ho Lee, "Cross-modal contrastive learning for aspect-based recommendation", Information Fusion, 99, 101858, 2023.11 (Q1/IF:18.6)
   - 유저 선호도를 정교하게 파악하여 향상된 추천을 수행하기 위해, 외부 지식 기반의 추천이 많이 제안되어옴. 본 논문에서는 멀티모달 데이터(지식 그래프와 리뷰 텍스트) 사이의 상관관계를 그래프/텍스트 내 aspect를 고려하여 contrastive pretrining을 수행함. 따라서, 유저의 미세한 aspect-level 선호도 (지식 그래프의 general features와 리뷰 텍스트의 salient features) 기반으로 추천 성능을 향상시킴
   - External knowledge-based recommender systems can provide a better understanding of user preferences and enable improved recommendations. In this paper, we propose a contrastive pretraining to capture the correlations between aspects within multimodal external knowledge, i.e., a knowledge graph and review texts. Thus, we can learn users' fine-grained aspect-level preferences that incorporate both general features of the knowledge graph and salient features of the review text, resulting in recommendation performance improvement.
-
-  Integrate multimodal data (knowledge graph and review text) for aspect-based recommendation.Propose a novel cross-modal contrastive learning with the correlation between multimodal data. Learn informative de-biased aspect-level representation by comparing signals from multimodal data.
   
 "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": 
   - Submit 2023.06.02 / Presented 2023.10.21-25
   - Byungkook Oh, Yul Kim, and Bumki Min, "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation", In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM'23), Birmingham, United Kingdom, 2023.10.21-25 (full)
+  - 추천시스템 내 InfoNCE-like loss들은 한 유저당 다수의 negative 아이템을 활용하는 non-symmetric loss로, 유의미한 아이템 분포 학습에 집중함. 본 논문에서는 다수의 negative 유저와 아이템을 동시에 활용하고 각 유저/아이템 분포 특징을 보존하기 위해 stop-gradient를 적용한 symmetric loss를 제안하여, 최적화된 유저/아이템 분포를 동시에 학습할 수 있음. 결과적으로, user/item prediction 성능을 동시에 향상시킴
+  - InfoNCE-like losses in recommendation systems are non-symmetric losses that utilize multiple negative items per user and focus on learning meaningful item distributions. In this paper, we propose a symmetric loss that utilizes multiple negative users and items simultaneously and applies a stop-gradient to preserve each characteristic of user/item embedding distributions, so that we can simultaneously explore optimized user/item distributions. As a result, the user and item prediction performances can be improved simultaneously.
 
 "Active learning for cross-sentence n-ary relation extraction": 
   - Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
