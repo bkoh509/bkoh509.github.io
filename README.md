@@ -31,6 +31,9 @@ classification, prediction, retrieval, data generation).
 - Analytics: https://analytics.google.com/analytics/web/#/
 - Scroll-to-top: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 - Snackbar/Toast: https://www.w3schools.com/howto/howto_js_snackbar.asp
+- Journal Ranking:
+    - Impact Factor: https://impactfactorforjournal.com/jcr-impact-factor-2022/
+    - scimagojr: https://www.scimagojr.com/journalrank.php?area=1700&type=j
 
 ## Trouble Shooting
 
