@@ -100,6 +100,8 @@
 "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": 
   - Presented 2019.11.03-07
   - Xiongnan Jin, Byungkook Oh, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen, "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations", In The 28th ACM International Conference on Information and Knowledge Management (CIKM'19), Beijing, China, 2019.11.03-07 (full)
+  - 기존 유사 지역 검색 방법은 spatial entity의 계층적 유형과 entity 사이의 관계를 포착하지 못함. 본 논문은 지역 유사성 파악을 위한 공간 지식그래프 표현학습 방법으로, spatial entity의 계층적 유형/의미 정보를 유지하는 entity embedding에 대해 triplet loss를 적용하여, 지역 내 spatial entity 사이의 상대적 위치정보를 보존하는 지역 특징 벡터를 추출함. 이 특징 벡터를 활용하여 지역 유사성을 측정할 수 있음
+  
 
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information":
   - Presented 2019.11.03-07
