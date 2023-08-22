@@ -3,22 +3,21 @@ _template: Received -; Accepted -; Available online -; Issued -
 "Knowledge-constrained Interest-aware Multi-Behavior Recommendation with Behavior Pattern Identification": -
 "Granular Intents Learning via Mutual Information Maximization for Knowledge-aware Recommendation": -
 "A Survey on Knowledge Graph Evolution: Proliferation, Embedding, and Versioning": -
-"Cross-modal contrastive learning for aspect-based recommendation": Received 2023.01.24; Accepted 2023.05.26; Available online 2023.06.03; Issued -
-"Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": Submit 2023.06.02; Presented 2023.10.21-25
-"Active learning for cross-sentence n-ary relation extraction": Received 2021.09.28; Accepted 2023.06.10; Available online 2023.06.15; Issued
-"Pre-training local and non-local geographical influences with contrastive learning": -
-"Active Learning for Knowledge Graph Schema Expansion": -
+"Cross-modal contrastive learning for aspect-based recommendation": Received 2023.01.24 / Accepted 2023.05.26 / Available online 2023.06.03 / Issued 2023.11
+"Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": Submit 2023.06.02 / Presented 2023.10.21-25
+"Active learning for cross-sentence n-ary relation extraction": Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
+"Pre-training local and non-local geographical influences with contrastive learning": Received 2022.04.17 / Accepted 2022.10.12 / Available online 2022.10.22 / Issued 2023.01.10
+"Active Learning for Knowledge Graph Schema Expansion": Received 2020.03.10 / Accepted 2021.03.17 / Available online 2021.04.01 / Issued 2022.12.01
 "Open-world knowledge graph completion for unseen entities and relations via attentive feature aggregation": Received 2020.09.01 / Accepted 2021.11.28 / Available online 2021.12.03 / Issued 2022.03
-"DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": -
-"Multi-task learning for spatial events prediction from social data": -
-"Inductive Gaussian representation of user-specific information for personalized stress-level prediction": -
-
+"DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": Presented 2021.12.07-10
+"Multi-task learning for spatial events prediction from social data": Received 2020.06.15 / Accepted 2021.09.17 / Available online 2021.09.21 / Issued 2021.12
+"Inductive Gaussian representation of user-specific information for personalized stress-level prediction": Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
 "News Recommendation with Topic‑Enriched Knowledge Graphs": Presented 2020.10.19–23
 "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation": Presented 2020.10.19–23
 "Reliable Knowledge Graph Path Representation Learning": Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
 "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": Presented 2019.11.3-7
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information": Presented 2019.11.3-7
-"Reliable TF-based recommender system for capturing complex correlations among contexts": Received: 2017.07.25 / Accepted: 2018.06.04 / Published online: 2018.06.25 / Issued 2019.04.15
+"Reliable TF-based recommender system for capturing complex correlations among contexts": Received: 2017.07.25 / Accepted: 2018.06.04 / Available online: 2018.06.25 / Issued 2019.04.15
 "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods": Presented 2018.10.22-26
 "Outlier-robust web service selection based on a probabilistic QoS model": Published 2016.05.01
 "Web Service Selection based on a Probabilistic QoS Model": Presented 2015.12.17-19 
