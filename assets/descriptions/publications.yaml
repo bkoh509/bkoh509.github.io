@@ -5,6 +5,10 @@
 "Cross-modal contrastive learning for aspect-based recommendation":
   - Received 2023.01.24 / Accepted 2023.05.26 / Available online 2023.06.03 / Issued 2023.11
   - Heesoo Won, Byungkook Oh, Hyeongjun Yang, and Kyong-Ho Lee, "Cross-modal contrastive learning for aspect-based recommendation", Information Fusion, 99, 101858, 2023.11 (Q1/IF:18.6)
+  - 유저 선호도를 정교하게 파악하여 향상된 추천을 수행하기 위해, 외부 지식 기반의 추천이 많이 제안되어옴. 본 논문에서는 멀티모달 데이터(지식 그래프와 리뷰 텍스트) 사이의 상관관계를 그래프/텍스트 내 aspect를 고려하여 contrastive pretrining을 수행함. 따라서, 유저의 미세한 aspect-level 선호도 (지식 그래프의 general features와 리뷰 텍스트의 salient features) 기반으로 추천 성능을 향상시킴
+  - External knowledge-based recommender systems can provide a better understanding of user preferences and enable improved recommendations. In this paper, we propose a contrastive pretraining to capture the correlations between aspects within multimodal external knowledge, i.e., a knowledge graph and review texts. Thus, we can learn users' fine-grained aspect-level preferences that incorporate both general features of the knowledge graph and salient features of the review text, resulting in recommendation performance improvement.
+
+  Integrate multimodal data (knowledge graph and review text) for aspect-based recommendation.Propose a novel cross-modal contrastive learning with the correlation between multimodal data. Learn informative de-biased aspect-level representation by comparing signals from multimodal data.
   
 "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": 
   - Submit 2023.06.02 / Presented 2023.10.21-25
