@@ -4,19 +4,32 @@
 
 "Cross-modal contrastive learning for aspect-based recommendation":
   - Received 2023.01.24 / Accepted 2023.05.26 / Available online 2023.06.03 / Issued 2023.11
-  - Heesoo Won, Byungkook Oh, Hyeongjun Yang, and Kyong-Ho Lee, "Cross-modal contrastive learning for aspect-based recommendation." Information Fusion, 99, 2023.11 (Q1/IF:18.6)
+  - Heesoo Won, Byungkook Oh, Hyeongjun Yang, and Kyong-Ho Lee, "Cross-modal contrastive learning for aspect-based recommendation", Information Fusion, 99, 101858, 2023.11 (Q1/IF:18.6)
 
 "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": 
   - Submit 2023.06.02 / Presented 2023.10.21-25
-  - Byungkook Oh, Yul Kim, and Bumki Min, "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation." In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom, October 21–25, 2023 (full)
+  - Byungkook Oh, Yul Kim, and Bumki Min, "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation", In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom, October 21–25, 2023 (full)
 
-"Active learning for cross-sentence n-ary relation extraction": Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
+"Active learning for cross-sentence n-ary relation extraction": 
+  - Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
+  - Seungmin Seo, <b>Byungkook Oh</b>, Jeongbeom Jeoung, Donghyun Kim, Kyong-Ho Lee, Dong-Hoon Shin, and Yeonsoo Lee, "Active learning for cross-sentence n-ary relation extraction", Information Sciences, 645, 119328, 2023.10 (Q1/IF:8.1)
+ 
+
+
+
+
+
+
+
 "Pre-training local and non-local geographical influences with contrastive learning": Received 2022.04.17 / Accepted 2022.10.12 / Available online 2022.10.22 / Issued 2023.01.10
 "Active Learning for Knowledge Graph Schema Expansion": Received 2020.03.10 / Accepted 2021.03.17 / Available online 2021.04.01 / Issued 2022.12.01
 "Open-world knowledge graph completion for unseen entities and relations via attentive feature aggregation": Received 2020.09.01 / Accepted 2021.11.28 / Available online 2021.12.03 / Issued 2022.03
 "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": Presented 2021.12.07-10
 "Multi-task learning for spatial events prediction from social data": Received 2020.06.15 / Accepted 2021.09.17 / Available online 2021.09.21 / Issued 2021.12
-"Inductive Gaussian representation of user-specific information for personalized stress-level prediction": Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
+
+"Inductive Gaussian representation of user-specific information for personalized stress-level prediction": 
+  - Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
+  - 114912
 
 "News Recommendation with Topic‑Enriched Knowledge Graphs": 
   - Presented 2020.10.19–23
@@ -26,7 +39,11 @@
   - Presented 2020.10.19–23
   - Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin, and Yeonsoo Lee, "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation." In Proceedings of the 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 (full)
 
-"Reliable Knowledge Graph Path Representation Learning": Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
+"Reliable Knowledge Graph Path Representation Learning": 
+  - Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
+  - Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Reliable Knowledge Graph Path Representation Learning." IEEE Access, 8:32816-32825, 2020.02
+
+
 "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": Presented 2019.11.3-7
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information": Presented 2019.11.3-7
 "Reliable TF-based recommender system for capturing complex correlations among contexts": Received: 2017.07.25 / Accepted: 2018.06.04 / Available online: 2018.06.25 / Issued 2019.04.15
