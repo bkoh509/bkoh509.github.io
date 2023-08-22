@@ -1,8 +1,15 @@
 "Knowledge-constrained Interest-aware Multi-Behavior Recommendation with Behavior Pattern Identification": -
 "Granular Intents Learning via Mutual Information Maximization for Knowledge-aware Recommendation": -
 "A Survey on Knowledge Graph Evolution: Proliferation, Embedding, and Versioning": -
-"Cross-modal contrastive learning for aspect-based recommendation": Received 2023.01.24 / Accepted 2023.05.26 / Available online 2023.06.03 / Issued 2023.11
-"Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": Submit 2023.06.02 / Presented 2023.10.21-25
+
+"Cross-modal contrastive learning for aspect-based recommendation":
+  - Received 2023.01.24 / Accepted 2023.05.26 / Available online 2023.06.03 / Issued 2023.11
+  - Heesoo Won, Byungkook Oh, Hyeongjun Yang, and Kyong-Ho Lee, "Cross-modal contrastive learning for aspect-based recommendation." Information Fusion, 99, 2023.11 (Q1/IF:18.6)
+
+"Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation": 
+  - Submit 2023.06.02 / Presented 2023.10.21-25
+  - Byungkook Oh, Yul Kim, and Bumki Min, "Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation." In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom, October 21–25, 2023 (full)
+
 "Active learning for cross-sentence n-ary relation extraction": Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
 "Pre-training local and non-local geographical influences with contrastive learning": Received 2022.04.17 / Accepted 2022.10.12 / Available online 2022.10.22 / Issued 2023.01.10
 "Active Learning for Knowledge Graph Schema Expansion": Received 2020.03.10 / Accepted 2021.03.17 / Available online 2021.04.01 / Issued 2022.12.01
@@ -10,8 +17,15 @@
 "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": Presented 2021.12.07-10
 "Multi-task learning for spatial events prediction from social data": Received 2020.06.15 / Accepted 2021.09.17 / Available online 2021.09.21 / Issued 2021.12
 "Inductive Gaussian representation of user-specific information for personalized stress-level prediction": Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
-"News Recommendation with Topic‑Enriched Knowledge Graphs": Presented 2020.10.19–23
-"Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation": Presented 2020.10.19–23
+
+"News Recommendation with Topic‑Enriched Knowledge Graphs": 
+  - Presented 2020.10.19–23
+  - Dongho Lee, Byungkook Oh, Seungmin Seo, and Kyong‑Ho Lee, "News Recommendation with Topic‑Enriched Knowledge Graphs." In Proceedings of the 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 (full)
+  
+"Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation": 
+  - Presented 2020.10.19–23
+  - Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin, and Yeonsoo Lee, "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation." In Proceedings of the 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 (full)
+
 "Reliable Knowledge Graph Path Representation Learning": Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
 "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": Presented 2019.11.3-7
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information": Presented 2019.11.3-7
