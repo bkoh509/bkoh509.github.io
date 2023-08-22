@@ -35,9 +35,8 @@
 "Open-world knowledge graph completion for unseen entities and relations via attentive feature aggregation": 
   - Received 2020.09.01 / Accepted 2021.11.28 / Available online 2021.12.03 / Issued 2022.03
   - Byungkook Oh, Seungmin Seo, Jimin Hwang, Dongho Lee, and Kyong-Ho Lee, "Open-world knowledge graph completion for unseen entities and relations via attentive feature aggregation", Information Sciences, 586, 468-484, 2022.03 (Q1/IF:8.1)
-  - 
-  - 
-
+  - 기존 triple (head, relation, tail) 타당성 검증은 in-KG entity/relation sets에 대해서만 수행할 수 있음. 본 논문에서는 out-of-KG entity와 relation가 포함된 triple 검증 (즉, open-world setting)을 위해서, entity의 textual description과 realtion type constraints를 활용한 inductive KG embedding 방법을 제안함. 또한, multi-hop neighborhood 정보를 추가적으로 활용하여 고품질의 fact representation을 추출함
+  - Most triple (head, relation, tail) validation can only be performed on in-KG entity/relation sets. In this paper, we propose an inductive KG embedding method using entity textual descriptions and relation type constraints (i.e., domain and range constraints) to validate triples containing an out-of-KG entity or relation (called an open-world setting). Also, multi-hop neighborhood information is additionally utilized to extract high-quality fact representation.
 
 
 
@@ -54,6 +53,15 @@
 "Inductive Gaussian representation of user-specific information for personalized stress-level prediction": 
   - Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
   - Byungkook Oh, Jimin Hwang, Seungmin Seo, Sejin Chun, and Kyong-Ho Lee, "Inductive Gaussian representation of user-specific information for personalized stress-level prediction", Expert Systems with Applications, 178, 114912, 2021.09.15 (Q1/IF:8.5)
+
+
+
+
+
+
+
+
+
 
 "News Recommendation with Topic‑Enriched Knowledge Graphs": 
   - Presented 2020.10.19–23
