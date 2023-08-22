@@ -23,6 +23,8 @@
 "Pre-training local and non-local geographical influences with contrastive learning": 
   - Received 2022.04.17 / Accepted 2022.10.12 / Available online 2022.10.22 / Issued 2023.01.10
   - Byungkook Oh, Ilhyun Suh, Kihoon Cha, Junbeom Kim, Goeon Park, and Sihyun Jeong, "Pre-training local and non-local geographical influences with contrastive learning", Knowledge-Based Systems, 259, 110016, 2023.01.10 (Q1/IF:8.8)
+  - Location-Based Services (LBS) task를 수행하기 위해서는 대량의 task-specific data가 필요함. 본 논문에서는 LBS task에서 필요한 범용적 지식인 geographical influence를 사전학습하고 활용하는 것을 목표로 함. 이를 위해 사용자 방문 정보에서 두 지점의 지리적 근접성 (geospatial proximity)과 상대적 거리 차이 (relative distance difference)를 동시에 학습하기 위해 sequence-graph contrastive learning을 제안함
+  - Location-Based Services (LBS) tasks require large amounts of task-specific data. In this paper, we aim to pre-train and utilize geographical influence, which is general-purpose knowledge required in LBS tasks. To this end, we propose a sequence-graph contrastive learning objective that simultaneously learns the geospatial proximity and relative distance difference of two locations from user visit information.
 
 "Active Learning for Knowledge Graph Schema Expansion":
   - Received 2020.03.10 / Accepted 2021.03.17 / Available online 2021.04.01 / Issued 2022.12.01
