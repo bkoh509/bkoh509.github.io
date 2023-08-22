@@ -16,7 +16,9 @@
 
 "Active learning for cross-sentence n-ary relation extraction": 
   - Received 2021.09.28 / Accepted 2023.06.10 / Available online 2023.06.15 / Issued 2023.10
-  - Seungmin Seo, <b>Byungkook Oh</b>, Jeongbeom Jeoung, Donghyun Kim, Kyong-Ho Lee, Dong-Hoon Shin, and Yeonsoo Lee, "Active learning for cross-sentence n-ary relation extraction", Information Sciences, 645, 119328, 2023.10 (Q1/IF:8.1)
+  - Seungmin Seo, Byungkook Oh, Jeongbeom Jeoung, Donghyun Kim, Kyong-Ho Lee, Dong-Hoon Shin, and Yeonsoo Lee, "Active learning for cross-sentence n-ary relation extraction", Information Sciences, 645, 119328, 2023.10 (Q1/IF:8.1)
+  - text에서의 N-ary relation 추출은 대량의 레이블링된 고품질 dataset이 필요함. 본 논문에서는 data 의존성이 완화된, multiple sentences로부터 N-ary relation을 추출하는 active learning 기반의 incremental training을 제안함. 이때, 제안하는 schema-aware sampling 기법은 최초 학습된 (relation과 entitiies 사이의) 구조적 유사도 추출 모델을 활용하여, 레이블이 안된 dataset에서 유의미한 샘플을 추가적으로 활용함
+  - N-ary relation extraction from text requires a large amount of labeled high-quality datasets. In this paper, we propose an active learning-based incremental training method for extracting N-ary relations from multiple sentences that is less data-dependent. The proposed schema-aware sampling technique leverages the initially trained structural similarity extraction model (between relations and entities) to further utilize significant samples from unlabeled datasets.
  
 "Pre-training local and non-local geographical influences with contrastive learning": 
   - Received 2022.04.17 / Accepted 2022.10.12 / Available online 2022.10.22 / Issued 2023.01.10
