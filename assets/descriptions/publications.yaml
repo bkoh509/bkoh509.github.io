@@ -156,8 +156,8 @@
 "SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams": 
   history: Presented 2015.08.13-15
   cite: Seungmin Seo, Sejin Chun, Byungkook Oh, and Kyong-Ho Lee, "SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams", 2015 IEEE International Conference on Information Reuse and Integration (IRI'15), San Francisco, CA, USA, 2015.08.13-15
-  short_ko:
-  short_en:
+  short_ko: 본 논문에서는 raw sensor data에서 유의미한 정보를 추출하기 위한 sensor data processing 아키텍처를 제안함. 특히 유의미한 정보 추출을 위해서 머신러닝(클러스터링과 HMMs)과 온톨로지를 활용함. 추출된 정보는 sensor data에 대한 high-level description 나타낼 수 있으며, 시맨틱 지식 베이스 구축에 사용됨. 따라서, 사용자의 sensor data에 대한 높은 이해도와 재사용이 용이한 유의미한 정보 제공이 가능함
+  short_en: This paper proposes a sensor data processing architecture to extract meaningful information from raw sensor data. In particular, we utilize machine learning (clustering and HMMs) and ontology for meaningful information extraction. The extracted information can represent a high-level description of the sensor data and is used to build a semantic knowledge base. This enables users to better understand the sensor data and provide meaningful information that is easy to reuse.
   long_ko:
   
 "Semantic description, discovery and integration for the Internet of Things": 
