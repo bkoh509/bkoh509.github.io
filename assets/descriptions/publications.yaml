@@ -66,35 +66,52 @@
 
 
 "Inductive Gaussian representation of user-specific information for personalized stress-level prediction": 
-  - Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
-  - Byungkook Oh, Jimin Hwang, Seungmin Seo, Sejin Chun, and Kyong-Ho Lee, "Inductive Gaussian representation of user-specific information for personalized stress-level prediction", Expert Systems with Applications, 178, 114912, 2021.09.15 (Q1/IF:8.5)
-
-
-
-
-
-
-
-
-
+  history: Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
+  cite: Byungkook Oh, Jimin Hwang, Seungmin Seo, Sejin Chun, and Kyong-Ho Lee, "Inductive Gaussian representation of user-specific information for personalized stress-level prediction", Expert Systems with Applications, 178, 114912, 2021.09.15 (Q1/IF:8.5)
+  short_ko:
+  short_en:
+  long_ko:
 
 "News Recommendation with Topic‑Enriched Knowledge Graphs": 
-  - Presented 2020.10.19–23
-  - Dongho Lee, Byungkook Oh, Seungmin Seo, and Kyong‑Ho Lee, "News Recommendation with Topic‑Enriched Knowledge Graphs", In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20), Virtual Event, Ireland, 2020.10.19–23 (full)
+  history: Presented 2020.10.19–23
+  cite: Dongho Lee, Byungkook Oh, Seungmin Seo, and Kyong‑Ho Lee, "News Recommendation with Topic‑Enriched Knowledge Graphs", In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20), Virtual Event, Ireland, 2020.10.19–23 (full)
+  short_en:
+  short_en:
+  long_ko:
 
 "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation": 
-  - Presented 2020.10.19–23
-  - Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin, and Yeonsoo Lee, "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation." In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20), Virtual Event, Ireland, 2020.10.19–23 (full)
+  history: Presented 2020.10.19–23
+  cite: Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin, and Yeonsoo Lee, "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation." In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20), Virtual Event, Ireland, 2020.10.19–23 (full)
+  short_ko:
+  short_en:
+  long_ko:
 
 "Reliable Knowledge Graph Path Representation Learning": 
-  - Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
-  - Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Reliable Knowledge Graph Path Representation Learning." IEEE Access, 8, 32816-32825, 2020.02.14
-
-"Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": 
-  - Presented 2019.11.03-07
-  - Xiongnan Jin, Byungkook Oh, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen, "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations", In The 28th ACM International Conference on Information and Knowledge Management (CIKM'19), Beijing, China, 2019.11.03-07 (full)
-  - 기존 유사 지역 검색 방법은 spatial entity의 계층적 유형과 entity 사이의 관계를 포착하지 못함. 본 논문은 지역 유사성 파악을 위한 공간 지식그래프 표현학습 방법으로, spatial entity의 계층적 유형/의미 정보를 유지하는 entity embedding에 대해 triplet loss를 적용하여, 지역 내 spatial entity 사이의 상대적 위치정보를 보존하는 지역 특징 벡터를 추출함. 이 특징 벡터를 활용하여 지역 유사성을 측정할 수 있음
+  history: Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
+  cite: Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Reliable Knowledge Graph Path Representation Learning." IEEE Access, 8, 32816-32825, 2020.02.14
+  short_ko: 본 논문에서는 신뢰도가 높고 의미적으로 유효한 지식그래프 관계 경로 (relational path)를 탐색하기 위해, 기존 방법과 달리, 관계 경로 내 중간 개체와 관계의 의미적 중요도를 반영함. 이를 위해, RDF schema 내 entity/relation 간 의미적 유효성을 보장하는 type constraints를 추가적으로 고려함. 또한, 관계-개체-관계 연결의 통계적 정보에 따라, 중간 개체/관계에 가중치를 달리하여 경로의 신뢰도를 다르게 평가함
+  short_en:
+  long_ko:
   
+"Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": 
+  history: Presented 2019.11.03-07
+  cite: Xiongnan Jin, Byungkook Oh, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen, "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations", In The 28th ACM International Conference on Information and Knowledge Management (CIKM'19), Beijing, China, 2019.11.03-07 (full)
+  short_ko: 기존 유사 지역 검색 방법은 spatial entity의 계층적 유형과 entity 사이의 관계를 포착하지 못함. 본 논문은 지역 유사성 파악을 위한 공간 지식그래프 표현학습 방법으로, spatial entity의 계층적 유형/의미 정보를 유지하는 entity embedding에 대해 triplet loss를 적용하여, 지역 내 spatial entity 사이의 상대적 위치정보를 보존하는 지역 특징 벡터를 추출함. 이 특징 벡터를 활용하여 지역 유사성을 측정할 수 있음
+  short_en:
+  long_ko:
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information":
   - Presented 2019.11.03-07
