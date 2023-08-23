@@ -44,25 +44,18 @@
   - Most triple (head, relation, tail) validation can only be performed on in-KG entity/relation sets. In this paper, we propose an inductive KG embedding method using entity textual descriptions and relation type constraints (i.e., domain and range constraints) to validate triples containing an out-of-KG entity or relation (called an open-world setting). Also, multi-hop neighborhood information is additionally utilized to extract high-quality fact representation.
   
 "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": 
-  - Presented 2021.12.07-10
-  - Junbeom Kim, Sihyun Jeong, Goeon Park, Kihoon Cha, Ilhyun Suh, and Byungkook Oh, "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation", 2021 International Conference on Data Mining Workshops (ICDMW'21), Auckland, New Zealand, 2021.12.07-10 (eight pages) 
-  - 기존 next Point-Of-Interest (POI) 추천은 과거 trajectory 내 POI들의 방문 시간과 위치정보를 주로 활용하여 순차적인 패턴을 학습함. 본 논문에서는 좀 더 실용적인 시나리오인 유저의 다음 POI 도착 예정 시간에 따른 next POI 추천을 타겟으로함. 이를 위해, graph neural networks를 활용하여, next POI 도착 예정 시간과 user trajectories에서 추출한 user-POI/POI-POI graphs 사이의 상관관계를 학습함
-  - Existing next Point-Of-Interest (POI) recommendations mainly utilize the visit times and locations of POIs in the past trajectory to learn sequential patterns. In this paper, we address the more practical scenario of recommending the next POI based on the user's expected arrival time at the next POI. For this purpose, we leverage graph neural networks to learn the correlation between the next POI arrival time and user-POI/POI-POI graphs from user trajectories.
-
-
-
-
-
-
-
-
+  history: Presented 2021.12.07-10
+  cite: Junbeom Kim, Sihyun Jeong, Goeon Park, Kihoon Cha, Ilhyun Suh, and Byungkook Oh, "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation", 2021 International Conference on Data Mining Workshops (ICDMW'21), Auckland, New Zealand, 2021.12.07-10 (eight pages) 
+  short_ko: 기존 next Point-Of-Interest (POI) 추천은 과거 trajectory 내 POI들의 방문 시간과 위치정보를 주로 활용하여 순차적인 패턴을 학습함. 본 논문에서는 좀 더 실용적인 시나리오인 유저의 다음 POI 도착 예정 시간에 따른 next POI 추천을 타겟으로함. 이를 위해, graph neural networks를 활용하여, next POI 도착 예정 시간과 user trajectories에서 추출한 user-POI/POI-POI graphs 사이의 상관관계를 학습함
+  short_en: Existing next Point-Of-Interest (POI) recommendations mainly utilize the visit times and locations of POIs in the past trajectory to learn sequential patterns. In this paper, we address the more practical scenario of recommending the next POI based on the user's expected arrival time at the next POI. For this purpose, we leverage graph neural networks to learn the correlation between the next POI arrival time and user-POI/POI-POI graphs from user trajectories.
+  long_ko: 
 
 "Multi-task learning for spatial events prediction from social data": 
-  - Received 2020.06.15 / Accepted 2021.09.17 / Available online 2021.09.21 / Issued 2021.12
-  - Sungkwang Eom, Byungkook Oh, Sangjin Shin, and Kyong-Ho Lee, "Multi-task learning for spatial events prediction from social data", Information Sciences, 581, 278-290, 2021.12 (Q1/IF:8.1)
-
-
-
+  history: Received 2020.06.15 / Accepted 2021.09.17 / Available online 2021.09.21 / Issued 2021.12
+  cite: Sungkwang Eom, Byungkook Oh, Sangjin Shin, and Kyong-Ho Lee, "Multi-task learning for spatial events prediction from social data", Information Sciences, 581, 278-290, 2021.12 (Q1/IF:8.1)
+  short_ko: 본 논문은 social data로부터 특정 위치에 발생할 spatial event를 상세하게 파악하고 위치-specific data 부족 문제 해결을 위해, event subtype을 예측하는 task를 설계하고 다수의 subtypes에 대한 multi-task learning을 적용함. 또한, 위치 사이의 의미적/공간적 관계 정보를 활용하여, 관계 정보에 따라 event representation들을 해당 tasks 사이에 공유함. 따라서, subtypes 사이의 상관관계를 더욱 잘 포착할 수 있음
+  short_en: In this paper, we aim to identify spatial events occurring at a specific location in detail and handle the problem of location-specific data sparsity. To do this, we design a task to predict event subtypes from social data and extend the tasks to perform multi-task learning for multiple subtypes. We also utilize semantic and spatial relationship information between locations to share event representations among tasks according to the relationship information. Thus, correlations between subtypes can be better captured.
+  long_ko: 본 논문은 social data로부터 특정 위치에 발생할 spatial event를 attribute 단위(subtype)로 상세하게 파악하고 위치-specific data 부족 및 불완전성 문제 해결을 위해, multiple subtypes (multiple tasks)을 예측하는 것을 목표로 함. 예를 들어, population of event의 subtype은 'Agricultural', 'Business', 'Education', and 'Labor'들이 존재하며, code of event는 'Economic Issues', 'Government and Political Issues', and 'Employment and Wages'들이 존재함. 이때, 각 subtype을 예측하는 task의 여러 개를 수행하는 multi-task learning을 수행함. 또한, 위치 사이의 의미적 관계와 지리적 근접성 (공간적 관계) 정보를 추가적으로 활용하여, 관계 정보에 따라 event representation들을 event subtype 예측하는 task들 사이에 공유함. 결과적으로, event 사이의 공유되는 정보인 social data로부터 event subtype별 특징을 잘 파악하여, event subtype 사이의 상관관계를 더욱 잘 포착할 수 있음
 
 
 
