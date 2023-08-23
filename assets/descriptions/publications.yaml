@@ -168,6 +168,6 @@
 "Semantic description, discovery and integration for the Internet of Things": 
   history: Presented 2015.02.07-09
   cite: Sejin Chun, Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Semantic description, discovery and integration for the Internet of Things", In Proceedings of the 9th IEEE International Conference on Semantic Computing (ICSC'15), Anaheim, CA, USAICSC, 2015.02.07-09
-  short_ko:
-  short_en:
+  short_ko: 본 논문에서는 다양한 IoT 자원 간의 메타데이터와 복잡한 관계를 효율적으로 관리/업데이트하기 위해, IoT 객체의 의미론적 기술, 검색, 통합을 지원하는 IoT directory를 제안함. 공유 컨셉화를 위해, 제안하는 시맨틱 IoT 컴포넌트 모델은 5개의 핵심 컨셉으로 구성되어 있으며, 메타데이터를 효율적으로 업데이트하기 위해 ModelType 관계를 포함하고 있음. 따라서, IoT 객체의 도메인 지식을 쉽게 공유/공개할 수 있음
+  short_en: In order to efficiently manage/update metadata and complex relationships among various IoT resources, this paper proposes an IoT directory that supports semantic description, search, and integration of IoT objects. For shared conceptualization, the proposed semantic IoT component model consists of five core concepts and includes ModelType relationships to efficiently update metadata. Thus, domain knowledge of IoT objects can be easily shared/published.
   long_ko:
