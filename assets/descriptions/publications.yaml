@@ -95,7 +95,7 @@
   
 "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations": 
   history: Presented 2019.11.03-07
-  cite: Xiongnan Jin, Byungkook Oh, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen, "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations", In The 28th ACM International Conference on Information and Knowledge Management (CIKM'19), Beijing, China, 2019.11.03-07 (full)
+  cite: Xiongnan Jin, Byungkook Oh, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen, "Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic Relations", In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM'19), Beijing, China, 2019.11.03-07 (full)
   short_ko: 기존 유사 지역 검색 방법은 spatial entity의 계층적 유형과 entity 사이의 관계를 포착하지 못함. 본 논문은 지역 유사성 파악을 위한 공간 지식그래프 표현학습 방법으로, spatial entity의 계층적 유형/의미 정보를 유지하는 entity embedding에 대해 triplet loss를 적용하여, 지역 내 spatial entity 사이의 상대적 위치정보를 보존하는 지역 특징 벡터를 추출함. 이 특징 벡터를 활용하여 지역 유사성을 측정할 수 있음
   short_en:
   long_ko:
@@ -114,29 +114,50 @@
 
 
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information":
-  - Presented 2019.11.03-07
-  - Byungkook Oh, Seungmin Seo, Cheolheon Shin, Eunju Jo, and Kyong-Ho Lee, "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information", In Proceedings of the 9th International Joint Conference on Natural Language Processing (EMNLP'19), Hong Kong, China, 2019.11.03-07 (oral)
+  history: Presented 2019.11.03-07
+  cite: Byungkook Oh, Seungmin Seo, Cheolheon Shin, Eunju Jo, and Kyong-Ho Lee, "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information", In Proceedings of the 9th International Joint Conference on Natural Language Processing (EMNLP'19), Hong Kong, China, 2019.11.03-07 (oral)
+  short_ko:
+  short_en:
+  long_ko:
 
 "Reliable TF-based recommender system for capturing complex correlations among contexts": 
-  - Received 2017.07.25 / Accepted 2018.06.04 / Available online 2018.06.25 / Issued 2019.04.15
-  - Byungkook Oh, Sangjin Shin, Sungkwang Eom, Jooik Jung, Minjae Song, Seungmin Seo, and Kyong-Ho Lee, "Reliable TF-based recommender system for capturing complex correlations among contexts", Journal of Intelligent Information Systems, 52(2), 337-365, 2019.04.15 (Q2/IF:3.4) 
+  history: Received 2017.07.25 / Accepted 2018.06.04 / Available online 2018.06.25 / Issued 2019.04.15
+  cite: Byungkook Oh, Sangjin Shin, Sungkwang Eom, Jooik Jung, Minjae Song, Seungmin Seo, and Kyong-Ho Lee, "Reliable TF-based recommender system for capturing complex correlations among contexts", Journal of Intelligent Information Systems, 52(2), 337-365, 2019.04.15 (Q2/IF:3.4)
+  short_ko:
+  short_en:
+  long_ko:
 
 "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods": 
-  - Presented 2018.10.22-26
-  - Byungkook Oh, Seungmin Seo, and Kyong-Ho Lee, "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods", In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (CIKM'18), Torino, Italy, 2018.10.22-26 (full)
+  history: Presented 2018.10.22-26
+  cite: Byungkook Oh, Seungmin Seo, and Kyong-Ho Lee, "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods", In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (CIKM'18), Torino, Italy, 2018.10.22-26 (full)
+  short_ko:
+  short_en:
+  long_ko:
 
 "Outlier-robust web service selection based on a probabilistic QoS model": 
-  - Published 2016.05.01
-  - Minjung Kim, Byungkook Oh, Jooik Jung, and Kyong-Ho Lee, "Outlier-robust web service selection based on a probabilistic QoS model", International Journal of Web and Grid Services, 12(2), 162-181, 2016.05.01 (Q3/IF:1.0)
+  history: Published 2016.05.01
+  cite: Minjung Kim, Byungkook Oh, Jooik Jung, and Kyong-Ho Lee, "Outlier-robust web service selection based on a probabilistic QoS model", International Journal of Web and Grid Services, 12(2), 162-181, 2016.05.01 (Q3/IF:1.0)
+  short_ko:
+  short_en:
+  long_ko:
 
 "Web Service Selection based on a Probabilistic QoS Model":
-  - Presented 2015.12.17-19 
-  - Minjung Kim, Xiongnan Jin, Jooik Jung, Byungkook Oh, and Kyong-Ho Lee, "Web Service Selection based on a Probabilistic QoS Model", In KCC, 2015.12.17-19 (domestic) 
+  history: Presented 2015.12.17-19 
+  cite: Minjung Kim, Xiongnan Jin, Jooik Jung, Byungkook Oh, and Kyong-Ho Lee, "Web Service Selection based on a Probabilistic QoS Model", In Proceedings of Korea Computer Congress (KCC'15), 2015.12.17-19 (domestic)
+  short_ko:
+  short_en:
+  long_ko:
 
-"DPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams": 
-  - Presented 2015.08.13-15
-  - Seungmin Seo, Sejin Chun, Byungkook Oh, and Kyong-Ho Lee, "DPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams", 2015 IEEE International Conference on Information Reuse and Integration (IRI'15), San Francisco, CA, USA, 2015.08.13-15
+"SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams": 
+  history: Presented 2015.08.13-15
+  cite: Seungmin Seo, Sejin Chun, Byungkook Oh, and Kyong-Ho Lee, "SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams", 2015 IEEE International Conference on Information Reuse and Integration (IRI'15), San Francisco, CA, USA, 2015.08.13-15
+  short_ko:
+  short_en:
+  long_ko:
   
 "Semantic description, discovery and integration for the Internet of Things": 
-  - Presented 2015.02.07-09
-  - Sejin Chun, Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Semantic description, discovery and integration for the Internet of Things", In Proceedings of the 9th IEEE International Conference on Semantic Computing (ICSC'15), Anaheim, CA, USAICSC, 2015.02.07-09
+  history: Presented 2015.02.07-09
+  cite: Sejin Chun, Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Semantic description, discovery and integration for the Internet of Things", In Proceedings of the 9th IEEE International Conference on Semantic Computing (ICSC'15), Anaheim, CA, USAICSC, 2015.02.07-09
+  short_ko:
+  short_en:
+  long_ko:
