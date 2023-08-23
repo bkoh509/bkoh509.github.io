@@ -134,19 +134,24 @@
   short_en:
   long_ko:
 
+
+
+
+
+
 "Outlier-robust web service selection based on a probabilistic QoS model": 
   history: Published 2016.05.01
   cite: Minjung Kim, Byungkook Oh, Jooik Jung, and Kyong-Ho Lee, "Outlier-robust web service selection based on a probabilistic QoS model", International Journal of Web and Grid Services, 12(2), 162-181, 2016.05.01 (Q3/IF:1.0)
-  short_ko:
-  short_en:
+  short_ko: 서비스의 각 속성 Quality of Service (QoS)에 대한 local 제약 조건을 주로 고려하는 기존 방법은 적절한 서비스를 선택하지 못할 때가 있음. 본 논문은 속성 QoS의 이상치를 고려할 수 있는 확률적 QoS 모델을 제안함. 실행 이력으로부터 다수의 서비스 속성을 동시에 고려하는 global 제약 조건을 재구성하고, global QoS conformance를 기반으로 서비스를 선택함. 따라서, 이상치를 포함한 다양한 QoS를 고려할 수 있음
+  short_en: Existing methods, which centrally consider local constraints on each attribute quality of service (QoS) of a service, often fail to select the appropriate service. This paper proposes a probabilistic QoS model that can consider outliers in an attribute QoS of a service. To do this, we reconstruct global QoS constraints from service execution history that consider multiple service attributes simultaneously. Then, the final service is selected based on the global QoS conformance. Thus, a variety of QoS including outliers can be considered.
   long_ko:
 
 "Web Service Selection based on a Probabilistic QoS Model":
   history: Presented 2015.12.17-19 
   cite: Minjung Kim, Xiongnan Jin, Jooik Jung, Byungkook Oh, and Kyong-Ho Lee, "Web Service Selection based on a Probabilistic QoS Model", In Proceedings of Korea Computer Congress (KCC'15), 2015.12.17-19 (domestic)
-  short_ko:
-  short_en:
-  long_ko:
+  short_ko: 기존 서비스 선택 방법은 Quality of Service (QoS)의 정적인 값을 고려하거나 정규분포를 가정하는 한계가 존재함. 본 논문에서는 동적인 환경에서 발생할 수 있는 QoS 값을 다루기 위해, 서비스 실행 이력 기반의 확률적 QoS 모델을 제안함. 실행 이력으로부터 유저 요구사항인 제약조건을 만족시키는 정도를 서비스 속성별로 계산하여 최종 서비스를 선택함. 따라서, 이상치를 포함한 다양한 QoS를 고려할 수 있음
+  short_en: Existing service selection methods mainly focus on the static values of QoS or the assumption of a normal distribution. In this paper, we propose a probabilistic QoS model based on service execution history to deal with QoS values in a dynamic environment. From the execution history, the degree of satisfying QoS constraints (user requirements) is calculated for each service attribute to select the final service. Thus, a variety of QoS, including outliers, can be considered.
+  long_ko: 
 
 "SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams": 
   history: Presented 2015.08.13-15
