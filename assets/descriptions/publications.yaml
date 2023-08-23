@@ -64,16 +64,11 @@
   short_en: This paper proposes an Inductive KG Embedding model to perform inference on unseen triples containing new entity or relation that is not seen in the learning process. To do that, we utilize textual features, which are the shared information between the existing knowledge graph and the unseen triples. Specifically, we extract triple features from type constraints and labels of relations and descriptions/types/labels of entities. In addition, we restrict unnecessary neighborhood features in GNN's feature aggregation based on type constraint information.
   long_ko:
 
-
-
-
-
-
 "News Recommendation with Topic‑Enriched Knowledge Graphs": 
   history: Presented 2020.10.19–23
   cite: Dongho Lee, Byungkook Oh, Seungmin Seo, and Kyong‑Ho Lee, "News Recommendation with Topic‑Enriched Knowledge Graphs", In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM'20), Virtual Event, Ireland, 2020.10.19–23 (full)
-  short_en:
-  short_en:
+  short_ko: 본 논문에서는 뉴스 토픽 정보가 모델링 된 지식 그래프에 기반한 뉴스 추천을 목표로 함. 먼저, 모든 뉴스로부터 공통의 토픽 정보을 추출하기 위해, 뉴스 타이틀 내 엔티티에 기반하여 토픽-enhanced 지식 서브그래프를 구축함. 그리고, GNN을 활용하여, 구축한 공통의 토필 정보(서브그래프)가 반영된 후보 뉴스의 topical feature를 추출하고, 과거 뉴스 feature들 사이의 유사성을 파악하여, 후보 뉴스 추천 여부를 파악함
+  short_en: This paper aims to provide news recommendations based on knowledge graphs about news topical information. First, we construct a topic-enhanced knowledge subgraph based on entities in all news histories' titles, which means common topical knowledge of all news. Then, with a GNN, we extract the topical features from the candidate news reflecting the common topical information (subgraph) and identify the similarity between the news history features to determine whether the candidate news should be recommended.
   long_ko:
 
 "Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation": 
@@ -82,11 +77,6 @@
   short_ko:
   short_en:
   long_ko:
-
-
-
-
-
 
 "Reliable Knowledge Graph Path Representation Learning": 
   history: Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
