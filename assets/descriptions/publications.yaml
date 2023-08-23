@@ -57,14 +57,6 @@
   short_en: In this paper, we aim to identify spatial events occurring at a specific location in detail and handle the problem of location-specific data sparsity. To do this, we design a task to predict event subtypes from social data and extend the tasks to perform multi-task learning for multiple subtypes. We also utilize semantic and spatial relationship information between locations to share event representations among tasks according to the relationship information. Thus, correlations between subtypes can be better captured.
   long_ko: 본 논문은 social data로부터 특정 위치에 발생할 spatial event를 attribute 단위(subtype)로 상세하게 파악하고 위치-specific data 부족 및 불완전성 문제 해결을 위해, multiple subtypes (multiple tasks)을 예측하는 것을 목표로 함. 예를 들어, population of event의 subtype은 'Agricultural', 'Business', 'Education', and 'Labor'들이 존재하며, code of event는 'Economic Issues', 'Government and Political Issues', and 'Employment and Wages'들이 존재함. 이때, 각 subtype을 예측하는 task의 여러 개를 수행하는 multi-task learning을 수행함. 또한, 위치 사이의 의미적 관계와 지리적 근접성 (공간적 관계) 정보를 추가적으로 활용하여, 관계 정보에 따라 event representation들을 event subtype 예측하는 task들 사이에 공유함. 결과적으로, event 사이의 공유되는 정보인 social data로부터 event subtype별 특징을 잘 파악하여, event subtype 사이의 상관관계를 더욱 잘 포착할 수 있음
 
-
-
-
-
-
-
-
-
 "Inductive Gaussian representation of user-specific information for personalized stress-level prediction": 
   history: Received 2019.10.30 / Accepted 2021.03.14 / Available online 2021.03.18 / Issued 2021.09.15
   cite: Byungkook Oh, Jimin Hwang, Seungmin Seo, Sejin Chun, and Kyong-Ho Lee, "Inductive Gaussian representation of user-specific information for personalized stress-level prediction", Expert Systems with Applications, 178, 114912, 2021.09.15 (Q1/IF:8.5)
@@ -91,6 +83,11 @@
   short_en:
   long_ko:
 
+
+
+
+
+
 "Reliable Knowledge Graph Path Representation Learning": 
   history: Received 2019.11.17 / Accepted 2020.01.28 / Published 2020.02.14
   cite: Seungmin Seo, Byungkook Oh, and Kyong-Ho Lee, "Reliable Knowledge Graph Path Representation Learning." IEEE Access, 8, 32816-32825, 2020.02.14
@@ -104,46 +101,28 @@
   short_ko: 기존 유사 지역 검색 방법은 spatial entity의 계층적 유형과 entity 사이의 관계를 포착하지 못함. 본 논문은 지역 유사성 파악을 위한 공간 지식그래프 표현학습 방법으로, spatial entity의 계층적 유형/의미 정보를 유지하는 entity embedding에 대해 triplet loss를 적용하여, 지역 내 spatial entity 사이의 상대적 위치정보를 보존하는 지역 특징 벡터를 추출함. 이 특징 벡터를 활용하여 지역 유사성을 측정할 수 있음
   short_en:
   long_ko:
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
 "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information":
   history: Presented 2019.11.03-07
   cite: Byungkook Oh, Seungmin Seo, Cheolheon Shin, Eunju Jo, and Kyong-Ho Lee, "Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local Information", In Proceedings of the 9th International Joint Conference on Natural Language Processing (EMNLP'19), Hong Kong, China, 2019.11.03-07 (oral)
-  short_ko:
-  short_en:
+  short_ko: 본 논문은 문장들의 올바른 순서를 구하기 위한 문장 사이의 일관성 모델링을 목표로 함. 뒤섞인 문장들의 모든 벡터 표현을 단일 벡터로 압축하는 기존 방식과 달리, 본 논문은 Transformer를 활용하여 단일 벡터로의 압축을 수행하지 않음. 또한, 문단과 무관하게 다음에 나올 문장을 선택하는 것이 아니라, 토픽 모델링 기반의 feature를 활용하여 현재까지 예측한 문장들의 주제적 문맥 흐름을 고려하여 다음 문장을 예측함
+  short_en: This paper aims to model the dependency between sentences in order to find the correct order of sentences. Unlike existing methods that compress all vector representations of shuffled sentences into a single vector representation, this paper utilizes Transformer not to perform compression into a single vector. Also, instead of selecting the next sentence independent of the paragraph, this paper uses topic modeling-based features to predict the next sentence by considering the thematic and contextual flow of the sentences predicted so far.
   long_ko:
 
 "Reliable TF-based recommender system for capturing complex correlations among contexts": 
   history: Received 2017.07.25 / Accepted 2018.06.04 / Available online 2018.06.25 / Issued 2019.04.15
   cite: Byungkook Oh, Sangjin Shin, Sungkwang Eom, Jooik Jung, Minjae Song, Seungmin Seo, and Kyong-Ho Lee, "Reliable TF-based recommender system for capturing complex correlations among contexts", Journal of Intelligent Information Systems, 52(2), 337-365, 2019.04.15 (Q2/IF:3.4)
-  short_ko:
-  short_en:
+  short_ko: 본 논문에서 제안하는 텐서 분해 기반의 상황 인지형 추천 시스템은 다양한 상황 정보에 대한 유저별로 상이한 가중치를 파악하는 것을 목표로 함. 특히, 상황 정보 타입 개수에 맞게 상황 정보 벡터 표현 차원 수를 설정하여 학습할 수 있기 때문에 풍푸한 상황 정보 표현이 가능함. 또한, 시간이 지날수록 달라지는 유저 선호도를 고려하기 위해, 학습 데이터가 오래될수록 시그모이드 함수를 활용하여 재활용 가중치 조정함
+  short_en: Our tensor factorization-based context-aware recommender system proposed aims to capture user-specific weights for various contextual information. In particular, it can be trained by setting the number of dimensions of the contextual information vector representation according to the number of contextual information types. This can foster a rich contextual information representation. In addition, to account for user preferences that change over time, we utilize a sigmoid function to adjust the recycling weights as the training data gets older.
   long_ko:
 
 "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods": 
   history: Presented 2018.10.22-26
   cite: Byungkook Oh, Seungmin Seo, and Kyong-Ho Lee, "Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop Neighborhoods", In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (CIKM'18), Torino, Italy, 2018.10.22-26 (full)
-  short_ko:
-  short_en:
+  short_ko: 본 논문은 지식그래프 내 triple 유효성 판단을 위해, triple 내 엔티티의 multi-hop 엔티티/관계 정보를 추가적으로 활용하는 모델을 제안함. 특히, multi-hop 정보를 전부 활용하지 않고, BFS 그래프 탐색을 활용하여 유용한 multi-hop 엔티티/관계들을 시퀀스 형태로 추출함. 이 시퀀스를 반영하여 triple의 유효성 점수를 계산하기 위해, 합성곱 연산을 활용하여 부분부분 중요한 연결 패턴(엔티티/관계 서브 시퀀스)에 집중함
+  short_en: This paper proposes a knowledge graph embedding model that utilizes additional multi-hop entity/relation information of a given triple for its validation. In particular, instead of utilizing all multi-hop information, we extract useful multi-hop entities/relationships in the form of sequences using BFS graph traversal. To compute the validation score of a triple based on the sequence, we utilize convolutional operations to focus on partially significant connection patterns (entity/relationship sub-sequences).
   long_ko:
-
-
-
-
-
-
+  
 "Outlier-robust web service selection based on a probabilistic QoS model": 
   history: Published 2016.05.01
   cite: Minjung Kim, Byungkook Oh, Jooik Jung, and Kyong-Ho Lee, "Outlier-robust web service selection based on a probabilistic QoS model", International Journal of Web and Grid Services, 12(2), 162-181, 2016.05.01 (Q3/IF:1.0)
