@@ -1,3 +1,6 @@
+"Context-Aware Relational Learning for Knowledge Graph Completion":
+  short_ko: 본 논문은 context(이웃 정보)를 고려한 지식그래프 임베딩 학습이 다양한 task 조건에서 triple 유효성 판단에 효과적임을 보임. 이를 위해서, 그래프 탐색을 통해 추출한 multi-hop 엔티티/관계 정보를 활용하는 모델,  학습 과정에서 보지 못했던 새로운 개체/관계가 포함된 새로운 triple에 대한 추론이 가능한 모델, 지식그래프 내 특정 관계에 대한 low-resource triples에 대해 meta-learning 개념을 도입한 모델을 제안함
+
 "Knowledge-constrained Interest-aware Multi-Behavior Recommendation with Behavior Pattern Identification": Under Review
 "Granular Intents Learning via Mutual Information Maximization for Knowledge-aware Recommendation": Under Review
 "A Survey on Knowledge Graph Evolution: Proliferation, Embedding, and Versioning": Under Review
