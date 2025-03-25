@@ -7,7 +7,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    color: #333;
+    color: #222;
     background: #f7f7f7;
 
     font-family: 'Noto Sans KR', 'Roboto', Helvetica, Arial, sans-serif;
@@ -39,6 +39,12 @@ html, body {
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
+    @media screen and (max-device-width: 800px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 #main.content {
@@ -47,15 +53,16 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
-    margin: 0 0 20px !important;
+    margin: 0 0 20px;
     display: flex;
     font-weight: 700;;
 }
 
 h1 {
     font-size: 1.5em;
+
+    margin: 0px 0 0px;
     color: #393939;
-    margin: 0 0 20px;
     line-height: 1.1;
 
     /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
@@ -112,10 +119,18 @@ b {
 }
 
 .sparse-list {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .sparse-list:last-child {
+    padding-bottom: 0;
+}
+
+.sparsest-list {
+    padding-bottom: 15px;
+}
+
+.sparsest-list:last-child {
     padding-bottom: 0;
 }
 
@@ -182,41 +197,6 @@ b {
         height: 200px;
     }
 }
-
-#header #biography {
-    font-size: 0.95em;
-}
-
-.quote {
-    font-size: 1em;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.quote::before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 0;
-    position: relative;
-    top: 15px;
-    color: #ccc;
-    font-size: 2.5em;
-}
-
-.quote::after {
-    content: close-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 0;
-    position: relative;
-    top: 20px;
-    color: #ccc;
-    font-size: 2.5em;
-}
 /* ================================================= */
 
 
@@ -238,6 +218,10 @@ b {
 
 /* Hide the checkbox input */
 #toggle {
+    display: none;
+}
+
+#toggle2 {
     display: none;
 }
 
@@ -266,6 +250,31 @@ b {
     transition: left 0.3s;
 }
 
+/* Toggle button style */
+.toggle2-label {
+    cursor: pointer;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Toggle button circle */
+.toggle2-label::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 20%;
+    transition: left 0.3s;
+}
+
 /* When the checkbox is checked, adjust the style */
 #toggle:checked + .toggle-label {
     background-color: #035384;
@@ -273,6 +282,15 @@ b {
 
 #toggle:checked + .toggle-label::before {
     left: 27px;
+}
+
+/* When the checkbox is checked, adjust the style */
+#toggle2:checked + .toggle2-label {
+    background-color: #035384;
+}
+
+#toggle2:checked + .toggle2-label::before {
+    left: 32px;
 }
 /* ================================================ */
 
@@ -387,3 +405,142 @@ b {
     color: #035384;
 }
 /* ================================================= */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 0 20px;
+}
+
+.switch > span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 15px;
+    width: 45%;
+    text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+    color: #035384;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+    color: #fff;
+}
+
+.switch > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: #035384;
+}
+
+.switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #fff;
+}
+
+.check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+    padding: 2px;
+    width: 80px;
+    height: 32px;
+    background-color: #035384;
+    border-radius: 10px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #035384;
+    border-radius: 10px;
+}
+input.check-toggle-round-flat + label:after {
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    width: 38px;
+    background-color: #fff;
+    border-radius: 7px;
+    transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+    margin-left: 40px;
+}
+
+/* ========================================================== */
+/*                            Quote                           */
+/* ========================================================== */
+.quote {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.quote::before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 15px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
+.quote::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 20px;
+    color: #ccc;
+    font-size: 2.5em;
+}
+
+/* ========================================================== */
+/*                      Language Switcher                     */
+/* ========================================================== */
+.lang-en .ko {
+    display: none !important;
+}
+.lang-en .en {
+    display: inline;
+}
+
+.lang-ko .en {
+    display: none !important;
+}
+.lang-ko .ko {
+    display: inline;
+}

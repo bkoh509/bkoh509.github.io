@@ -79,3 +79,50 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+/* ========================================================== */
+/*                      Language Switcher                     */
+/* ========================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const toggler = document.getElementById('langToggle');
+    const wrapper = document.getElementById('langWrapper');
+
+    // 토글 상태가 바뀔 때마다 실행
+    toggler.addEventListener('change', () => {
+        if (toggler.checked) {
+            // 체크되면 한국어 모드
+            wrapper.classList.remove('lang-en');
+            wrapper.classList.add('lang-ko');
+        } else {
+            // 체크 해제되면 영어 모드
+            wrapper.classList.remove('lang-ko');
+            wrapper.classList.add('lang-en');
+        }
+    });
+});
+
+/* ========================================================== */
+/*                        Pages Loader                        */
+/* ========================================================== */
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('./pages/research_interests-en.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('research-interests-en').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('./pages/research_interests-ko.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('research-interests-ko').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+

@@ -1,0 +1,205 @@
+<ul>
+    <li class="sparse-list">
+        <b style="opacity: 75%" >Graph Representation Learning</b>
+        <ul>
+            <li>
+                <span class="tooltip" onclick="">Node & Graph Classification, Link Prediction</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Node Classification<br/>
+                        Focuses on assigning labels to individual nodes based on graph structure and node features<br/>
+                        Commonly applied to tasks like social network user classification, fraud detection, and biological function prediction in protein interaction networks<br/>
+                        Techniques include Graph Convolutional Networks (GCNs), Graph Attention Networks (GATs), and GraphSAGE<br/>
+                        <br/>
+                        Graph Classification<br/>
+                        Aims to predict a label for an entire graph (e.g., determining whether a molecular graph is toxic or non-toxic)<br/>
+                        Useful in chemistry, drug discovery, and social network analysis<br/>
+                        Approaches often combine node-level features and hierarchical pooling methods to learn a global graph representation<br/>
+                        <br/>
+                        Link Prediction<br/>
+                        Predicts the existence or likelihood of a connection between two nodes in a graph<br/>
+                        Widely used in social networks (friend suggestions), e-commerce (product recommendations), and knowledge graphs (relationship discovery)<br/>
+                        Methods incorporate node embeddings, pairwise distance metrics, and relational reasoning
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Knowledge Graph Representation/Completion/Validation/Construction</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Knowledge Graph Representation<br/>
+                        Involves learning vector embeddings for entities and relations to capture semantic and structural information<br/>
+                        Key approaches include TransE, DistMult, ComplEx, and RotatE<br/>
+                        Useful for downstream tasks like question answering and recommender systems<br/>
+                        <br/>
+                        Knowledge Graph Completion<br/>
+                        Aims to predict missing facts (edges) in a knowledge graph<br/>
+                        Uses embedding-based models or rule-based inference to discover hidden relationships<br/>
+                        Helps ensure knowledge bases remain comprehensive and updated<br/>
+                        <br/>
+                        Knowledge Graph Validation<br/>
+                        Ensures that newly added facts are correct and consistent<br/>
+                        Combines logical consistency checks with machine learning-based anomaly detection<br/>
+                        Crucial for maintaining high-quality, trustworthy knowledge repositories<br/>
+                        <br/>
+                        Knowledge Graph Construction<br/>
+                        Builds knowledge graphs from unstructured or semi-structured data sources (e.g., text, tables)<br/>
+                        Includes entity recognition, relation extraction, entity linking, and data integration steps<br/>
+                        Often requires NLP pipelines, crowdsourcing, and automated curation to scale
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sparse-list">
+        <b style="opacity: 75%" >Recommender Systems</b>
+        <ul>
+            <li>
+                <span class="tooltip" onclick="">Knowledge-Enhanced & Explainable Recommendations</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Knowledge-Enhanced Recommendations<br/>
+                        Incorporates external knowledge (e.g., knowledge graphs, domain ontologies) to improve recommendation accuracy and coverage<br/>
+                        Addresses the “cold start” problem by leveraging information about items, users, or contextual factors<br/>
+                        Enables more sophisticated user preference modeling and semantic reasoning<br/>
+                        <br/>
+                        Explainable Recommendations<br/>
+                        Provides interpretable reasons for why certain items are recommended<br/>
+                        Uses visual dashboards, natural language explanations, or feature attribution methods (e.g., attention, feature importance)<br/>
+                        Builds user trust and satisfaction by reducing the “black box” aspect of recommender algorithms
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Conversational Recommendation, Graph-based Recommendation</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Conversational Recommendation<br/>
+                        Interactively gathers user preferences through a dialog interface (text-based chat or voice assistant)<br/>
+                        Dynamically refines recommendations based on real-time user feedback<br/>
+                        Employs reinforcement learning, multi-turn conversation modeling, and user intent detection<br/>
+                        <br/>
+                        Graph-based Recommendation<br/>
+                        Models users, items, and auxiliary information as interconnected nodes to capture rich relational signals<br/>
+                        Applies graph neural networks or graph-based similarity measures to generate recommendations<br/>
+                        Excels in complex domains, such as social recommendations, e-commerce, and knowledge-driven suggestions
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sparse-list">
+        <b style="opacity: 75%" >Natural Language Processing</b>
+        <ul>
+            <li>
+                <span class="tooltip" onclick="">Question Answering, Information Retrieval & Extraction</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Question Answering (QA)<br/>
+                        Automatically finds answers to user queries from structured or unstructured data (e.g., text passages, knowledge graphs)<br/>
+                        Spans open-domain QA (searching large corpora) and closed-domain QA (domain-specific knowledge bases)<br/>
+                        Techniques include transformer-based language models (e.g., BERT, GPT) and QA-specific architectures (e.g., DrQA, FiD)<br/>
+                        <br/>
+                        Information Retrieval (IR)<br/>
+                        Focuses on retrieving relevant documents or passages in response to a query<br/>
+                        Key methods range from traditional TF-IDF and BM25 to advanced neural ranking models like ColBERT and DPR<br/>
+                        Critical for search engines, QA pipelines, and large-scale text analytics<br/>
+                        <br/>
+                        Information Extraction (IE)<br/>
+                        Identifies structured information (entities, relations, events) from unstructured text<br/>
+                        Encompasses named entity recognition (NER), relation extraction, event detection, and coreference resolution<br/>
+                        Forms the foundation for knowledge graph construction, text analytics, and advanced semantic understanding
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Multi-Modal & Knowledge-Enhanced Foundation Models</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Multi-Modal Foundation Models<br/>
+                        Integrate multiple data modalities (e.g., text, images, audio, video) into a single representation<br/>
+                        Enables tasks like image captioning, visual question answering, and video summarization<br/>
+                        Approaches include CLIP, ALIGN, and various vision-language transformers<br/>
+                        <br/>
+                        Knowledge-Enhanced Foundation Models<br/>
+                        Inject external knowledge (e.g., knowledge graphs, domain-specific lexicons) into large language models to improve reasoning and factual accuracy<br/>
+                        Alleviates hallucinations by grounding model outputs in verified information<br/>
+                        Techniques range from knowledge prompting to fine-tuning with entity embeddings or knowledge graph lookups
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Knowledge & LLM Distillation</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Knowledge Distillation<br/>
+                        Transfers knowledge from a large “teacher” model or knowledge source to a smaller “student” model<br/>
+                        Reduces model size and inference latency while retaining performance<br/>
+                        Key for deploying NLP systems in resource-constrained environments (e.g., mobile devices, edge computing)<br/>
+                        <br/>
+                        LLM Distillation<br/>
+                        Adapts large language models (e.g., GPT, BERT) into smaller, task-specific architectures<br/>
+                        Preserves the benefits of pre-training while drastically cutting down computational costs<br/>
+                        Common techniques include layer skipping, weight quantization, and teacher-student training frameworks
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sparse-list">
+        <b style="opacity: 75%" >Synergizing LLMs and Graphs</b>
+        <ul>
+            <li>
+                <span class="tooltip" onclick="">Text-to-Graph & Graph-to-Text Generation</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Text-to-Graph Generation<br/>
+                        - Automatically converts textual descriptions or dialogues into structured graph representations (e.g., knowledge graphs or scene graphs)<br/>
+                        - Useful for summarizing textual content in a structured form for downstream graph analytics<br/>
+                        - Relies on advanced natural language understanding, entity linking, and relation extraction<br/>
+                        <br/>
+                        Graph-to-Text Generation<br/>
+                        - Converts graph-based data (e.g., knowledge graph substructures) into coherent text or natural language descriptions<br/>
+                        - Applicable to personalized reports, chatbots, or question answering explanations grounded in graph data<br/>
+                        - Requires handling graph traversal, content planning, and natural language generation
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Knowledge-grounded & Context-aware Response Generation with LLMs</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        Knowledge-Grounded Response Generation<br/>
+                        - Utilizes knowledge bases or external corpora to produce accurate, factually grounded responses in chatbots or virtual assistants<br/>
+                        - Reduces the risk of hallucinations by referencing reliable knowledge sources<br/>
+                        - Methods include retrieval-augmented generation, knowledge attention mechanisms, and memory-augmented models<br/>
+                        <br/>
+                        Context-Aware Response Generation<br/>
+                        - Tailors responses to user context, conversation history, and broader discourse<br/>
+                        - Involves multi-turn dialogue modeling, user preference tracking, and situational awareness<br/>
+                        - Enhances user experience with coherent, personalized interactions
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="tooltip" onclick="">Graph-Structured Interaction for LLMs (GraphRAG, Graph-driven LLM Agents)</span>
+                <div class="tooltip-hover">
+                    <div class="tooltip-content">
+                        GraphRAG (Graph-based Retrieval-Augmented Generation)<br/>
+                        - Combines graph retrieval mechanisms with large language models to generate factually accurate content<br/>
+                        - Leverages graph embeddings or structured searches to locate relevant nodes/edges as conditioning for generation<br/>
+                        - Offers more interpretable and explainable results than purely text-based retrieval<br/>
+                        <br/>
+                        Graph-Driven LLM Agents<br/>
+                        - Employs graph structures to guide an LLM’s decision-making or action planning in complex tasks<br/>
+                        - Facilitates step-by-step reasoning, multi-hop inference, and structured knowledge manipulation<br/>
+                        - Potentially revolutionizes AI agents with enhanced reasoning, planning, and transparency
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
