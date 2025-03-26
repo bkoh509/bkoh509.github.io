@@ -25,7 +25,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
 
-    <script src="https://kit.fontawesome.com/f321d0a9d2.js" crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/download에서 최신 버전으로 -->
+    <!--<link rel="stylesheet" href="./assets/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="langWrapper" class="lang-en">
@@ -33,7 +35,7 @@
     <div id="profile">
         <div id="header-info">
             <div>
-                <div style="display: flex; align-items: center; margin: 0 0 20px;">
+                <div style="display: flex; align-items: center; margin: 0 0 20px 0;">
                 <h1>Byungkook Oh (오병국)</h1>
                     <div class="switch">
                         <input id="langToggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -49,9 +51,9 @@
                 <!--<span>Email#2: byungkook.oh at samsung dot com</span><br/>-->
                 <span>Assistant Professor</span><br/>
                 <span>Computer Science & Engineering, Konkuk University</span><br/>
-                <i class="fa fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:bkoh@konkuk.ac.kr"> bkoh at konkuk.ac.kr</a><br/>
-                <i class="fa fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:bkoh509@gmail.com"> bkoh509 at gmail.com</a><br/>
                 [<a href="./assets/cv/230819_CV_byungkook_Oh.pdf">CV</a>]
                 [<a href="https://scholar.google.co.kr/citations?user=DzArhLgAAAAJ">Google Scholar</a>]
@@ -131,517 +133,46 @@
     <!-- # Education                                                 -->
     <!-- ########################################################### -->
     <h2>Education/Experience</h2>
-    <ul>
-        <li>2024.03 - Current: Assistant Professor, Computer Science & Engineering, Konkuk University</li>
-        <li>2021.01 - 2024.01: Research Scientist (Staff Engineer), Samsung Research</li>
-        <li>2020.10 - 2020.12: Postdoctoral Researcher, Yonsei University, Seoul, Republic of Korea</li>
-        <li>2015.03 - 2020.08: Ph.D. in Computer Science, Yonsei University, Seoul, Republic of Korea
-            <ul>
-                <li>Dissertation: Context‑Aware Relational Learning for Knowledge Graph Completion</li>
-                <li>Advisor: Prof. Kyong-Ho Lee</li>
-            </ul>
-        </li>
-        <li>2011.03 - 2015.02: B.S. in Computer Science, Yonsei University, Seoul, Republic of Korea</li>
-    </ul>
+    <div id="education-experience"></div>
     <br/>
 
     <!-- ########################################################### -->
     <!-- # Publications                                              -->
     <!-- ########################################################### -->
     <h2>Publications</h2>
-    <!--    <h3>International Conference</h3>-->
-    <ul>
-        <li class="sparsest-list" style="opacity: 75%">
-            [23] <b>Knowledge-constrained Interest-aware Multi-Behavior Recommendation with Behavior Pattern
-            Identification</b><br/>
-            Gayeon Park, Hyeongjun Yang, Kyuhwan Yeom, Myeongheon Jeon, Yunjeong Ko, <b>Byungkook Oh</b>, and Kyong-Ho
-            Lee<br/>
-            AAAI 2024 <em>(Under Review)</em>
-            <!--[<a href="#none">PDF</a>]-->
-        </li>
-        <li class="sparsest-list" style="opacity: 75%">
-            [22] <b>Granular Intents Learning via Mutual Information Maximization for Knowledge-aware
-            Recommendation</b><br/>
-            Yerim Lee, Hyeongjun Yang, Gayeon Park, Taeyoung Kim, Kyong-Ho Lee, and <b>Byungkook Oh</b><br/>
-            Information Sciences <em>(Q1/IF:8.1)</em> <em>(Under Review)</em>
-            <!--[<a href="#none">PDF</a>]-->
-        </li>
-        <li class="sparsest-list" style="opacity: 75%">
-            [21] <b>A Survey on Knowledge Graph Evolution: Proliferation, Embedding, and Versioning</b><br/>
-            Xiongnan Jin, Zhilin Wang, Manni Duan, Yan Shao, Xingyun Hong, Yongheng Wang, Zemin Xu, Qinqin Long, <b>Byungkook
-            Oh</b>, and Kyong-Ho Lee<br/>
-            ICTAI 2023 <em>(Under Review)</em>
-            <!--[<a href="#none">PDF</a>]-->
-        </li>
-        <!-- ########################################################### -->
-        <li class="sparsest-list"> <!-- 2023.11 -->
-            [20] <span class="tooltip" onclick=""><b>Cross-modal contrastive learning for aspect-based recommendation</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    N/A
-                </div>
-            </div>
-            <br/>
-            Heesoo Won, <b>Byungkook Oh</b>, Hyeongjun Yang, and Kyong-Ho Lee<br/>
-            Information Fusion, 99, 101858, 2023.11 <em>(Q1/IF:18.6)</em> 
-            [<a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253523001744">LINK</a>]
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2023.10.21-25 -->
-            [19] <span class="tooltip" onclick=""><b>Dual-Oriented Contrast for Recommendation with A Stop-Gradient Operation</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    N/A
-                </div>
-            </div>
-            <br/>
-            <b>Byungkook Oh</b>, Yul Kim, and Bumki Min<br/>
-            CIKM 2023 <em>(full)</em>
-            [<a href="https://doi.org/10.1145/3583780.3614852">LINK</a>]
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2023.10 -->
-            [18] <span class="tooltip" onclick=""><b>Active learning for cross-sentence n-ary relation extraction</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                </div>
-            </div>
-            <br/>
-            Seungmin Seo, <b>Byungkook Oh</b>, Jeongbeom Jeoung, Donghyun Kim, Kyong-Ho Lee, Dong-Hoon Shin, and Yeonsoo Lee<br/>
-            Information Sciences, 645, 119328, 2023.10 <em>(Q1/IF:8.1)</em>
-            [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025523009131">LINK</a>]
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2023.01.10 -->
-            [17] <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705122011091"><b>
-            Pre-training local and non-local geographical influences with contrastive learning</b></a><br/>
-            <b>Byungkook Oh</b>, Ilhyun Suh, Kihoon Cha, Junbeom Kim, Goeon Park, and Sihyun Jeong<br/>
-            Knowledge-Based Systems, 259, 110016, 2023.01 <em>(Q1/IF:8.8)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2022.12.01 -->
-            [16] <a href="https://ieeexplore.ieee.org/abstract/document/9393602"><b>
-            Active Learning for Knowledge Graph Schema Expansion</b></a><br/>
-            Seungmin Seo, <b>Byungkook Oh</b>, Eunju Jo, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, Donghoon Shin, and
-            Yeonsoo Lee<br/>
-            IEEE Transactions on Knowledge and Data Engineering, 34(12), 5610-5620, 2022.12 <em>(Q1/IF:8.9)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2022.03 -->
-            [15] <a href="https://www.sciencedirect.com/science/article/abs/pii/S002002552101207X"><b>
-            Open-world knowledge graph completion for unseen entities and relations via attentive feature
-            aggregation</b></a><br/>
-            <b>Byungkook Oh</b>, Seungmin Seo, Jimin Hwang, Dongho Lee, and Kyong-Ho Lee<br/>
-            Information Sciences, 586, 468-484, 2022.03 <em>(Q1/IF:8.1)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2021.12.07-10 -->
-            [14] <a href="https://ieeexplore.ieee.org/abstract/document/9680032"><b>
-            DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation</b></a><br/>
-            Junbeom Kim, Sihyun Jeong, Goeon Park, Kihoon Cha, Ilhyun Suh, and <b>Byungkook Oh</b><br/>
-            ICDM Workshops 2021 <em>(eight pages)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2021.12 -->
-            [13] <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025521009804"><b>
-            Multi-task learning for spatial events prediction from social data</b></a><br/>
-            Sungkwang Eom, <b>Byungkook Oh</b>, Sangjin Shin, and Kyong-Ho Lee<br/>
-            Information Sciences, 581, 278-290, 2021.12 <em>(Q1/IF:8.1)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2021.09.15 -->
-            [12] <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417421003535"><b>
-            Inductive Gaussian representation of user-specific information for personalized stress-level
-            prediction</b></a><br/>
-            <b>Byungkook Oh</b>, Jimin Hwang, Seungmin Seo, Sejin Chun, and Kyong-Ho Lee<br/>
-            Expert Systems with Applications, 178, 114912, 2021.09 <em>(Q1/IF:8.5)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2020.10.19–23 -->
-            [11] <a href="https://dl.acm.org/doi/10.1145/3340531.3411932"><b>
-            News Recommendation with Topic‑Enriched Knowledge Graphs</b></a><br/>
-            Dongho Lee, <b>Byungkook Oh</b>, Seungmin Seo, and Kyong‑Ho Lee<br/>
-            CIKM 2020 <em>(full)</em>
-            [<a href="#none">PDF</a>]
-        </li> 
-        <li class="sparsest-list"> <!-- 2020.10.19–23 -->
-            [10] <a href="https://dl.acm.org/doi/abs/10.1145/3340531.3412011"><b>
-            Cross-sentence N-ary Relation Extraction using Entity Link and Discourse Relation</b></a><br/>
-            Sanghak Lee, Seungmin Seo, <b>Byungkook Oh</b>, Kyong-Ho Lee, Donghoon Shin, and Yeonsoo Lee<br/>
-            CIKM 2020 <em>(full)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2020.02.14 -->
-            [9] <a href="https://ieeexplore.ieee.org/abstract/document/8999619"><b>
-            Reliable Knowledge Graph Path Representation Learning</b></a><br/>
-            Seungmin Seo, <b>Byungkook Oh</b>, and Kyong-Ho Lee<br/>
-            IEEE Access, 8, 32816-32825, 2020.02 <em>(Q1/IF:3.9)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2019.11.03-07 -->
-            [8] <a href="https://dl.acm.org/doi/abs/10.1145/3357384.3358008"><b>
-            Learning Region Similarity over Spatial Knowledge Graphs with Hierarchical Types and Semantic
-            Relations</b></a><br/>
-            Xiongnan Jin, <b>Byungkook Oh</b>, Sanghak Lee, Dongho Lee, Kyong-Ho Lee, and Liang Chen<br/>
-            CIKM 2019 <em>(full)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2019.11.03-07 -->
-            [7] <a href="https://aclanthology.org/D19-1232/"><b>
-            Topic-Guided Coherence Modeling for Sentence Ordering by Preserving Global and Local
-            Information</b></a><br/>
-            <b>Byungkook Oh</b>, Seungmin Seo, Cheolheon Shin, Eunju Jo, and Kyong-Ho Lee<br/>
-            EMNLP 2019 <em>(oral)</em> 
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2019.04.15 -->
-            [6] <a href="https://link.springer.com/article/10.1007/s10844-018-0514-7"><b>
-            Reliable TF-based recommender system for capturing complex correlations among contexts</b></a><br/>
-            <b>Byungkook Oh</b>, Sangjin Shin, Sungkwang Eom, Jooik Jung, Minjae Song, Seungmin Seo, and Kyong-Ho
-            Lee<br/>
-            Journal of Intelligent Information Systems, 52(2), 337-365, 2019.04 <em>(Q2/IF:3.4)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2018.10.22-26 -->
-            [5] <a href="https://dl.acm.org/doi/abs/10.1145/3269206.3271769"><b>
-            Knowledge Graph Completion by Context-Aware Convolutional Learning with Multi-Hop
-            Neighborhoods</b></a><br/>
-            <b>Byungkook Oh</b>, Seungmin Seo, and Kyong-Ho Lee<br/>
-            CIKM 2018 <em>(full)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2016.05.01 -->
-            [4] <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJWGS.2016.076619"><b>
-            Outlier-robust web service selection based on a probabilistic QoS model</b></a><br/>
-            Minjung Kim, <b>Byungkook Oh</b>, Jooik Jung, and Kyong-Ho Lee<br/>
-            International Journal of Web and Grid Services, 12(2), 162-181, 2016.05 <em>(Q3/IF:1.0)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2015.12.17-19 -->
-            [3] <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06602425"><b>
-            Web Service Selection based on a Probabilistic QoS Model</b></a><br/>
-            Minjung Kim, Xiongnan Jin, Jooik Jung, <b>Byungkook Oh</b>, and Kyong-Ho Lee<br/>
-            KCC 2015 <em>(domestic)</em>
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2015.08.13-15 -->
-            [2] <a href="https://ieeexplore.ieee.org/abstract/document/7300949"><b>
-            SDPA: Sensor Data Processing Architecture for Modeling Semantic Data from Sensor Steams</b></a><br/>
-            Seungmin Seo, Sejin Chun, <b>Byungkook Oh</b>, and Kyong-Ho Lee<br/>
-            IRI 2015
-            [<a href="#none">PDF</a>]
-        </li>
-        <li class="sparsest-list"> <!-- 2015.02.07-09 -->
-            [1] <a href="https://ieeexplore.ieee.org/abstract/document/7050819"><b>
-            Semantic description, discovery and integration for the Internet of Things</b></a><br/>
-            Sejin Chun, Seungmin Seo, <b>Byungkook Oh</b>, and Kyong-Ho Lee<br/>
-            ICSC 2015
-            [<a href="#none">PDF</a>]
-        </li>
-    </ul>
-    <br/>
+    <div id="publications"></div>
 
-    <!--    <h3>International Journal - SCI(E)</h3>-->
-    <!--    <br/>-->
-
-    <!--    <h3>ETC</h3>-->
-    <!--    <br/>-->
-
+    <!-- ########################################################### -->
+    <!-- # Patents                                                   -->
+    <!-- ########################################################### -->
     <h2>Patents</h2>
-    <ul>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>Electronic Device and Controlling Method of Electronic Device<br/>- Explainable User Intent Learning based on Multi-Level Concepts</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    오병국, XXX, "전자 장치 및 전자 장치의 제어 방법,"<br/>
-                    - 멀티 레벨 컨셉 기반의 해석가능한 유저 의도 학습 방법<br/>
-                    특허 출원일 2022년 10월 28일
-                </div>
-            </div>
-            <b>Byungkook Oh</b> and XXX <br/>
-            KR Patent, filed October 28, 2022
-        </li>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>Server and Control Method Thereof <br/>- Pre-training Multi-Modal Geolocation Influence with Contrastive Learning<br/>- Dynamic-Positional Graph Neural Network for Next PoI Prediction</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    XXX, XXX, XXX, 오병국, XXX, XXX, "서버 및 이의 제어 방법," 중<br/>
-                    - 위치 기반 서비스를 위한 멀티모달 지리적 임베딩 사전학습 기술<br/>
-                    - 다음 방문 장소 예측을 위한 위치기반 다이나믹 그래프 학습 기술<br/>
-                    특허 출원일 2022년 02월 23일
-                </div>
-            </div>
-            XXX, XXX, XXX, <b>Byungkook Oh</b>, and XXX <br/>
-            KR Patent, filed February 23, 2022
-        </li>
-        <li class="sparsest-list">
-            <!--Kyung‑Ho Lee, Sanghak Lee, <b>Byungkook Oh</b>, Seungmin Seo, Donghoon Shin, and Yeonsoo Lee, ”Method and Apparatus for Relation Extraction between Entities,” KR Patent Application No. 10‑2020‑0073918, filed June 17, 2020. Patent Pending.-->
-            <!--이경호, 이상학, 서승민, 오병국, "개체 간 관계 추출 방법 및 장치," 특허 출원번호 제 10-2020-0073918 호, 출원일 2020년 06월 17일, 특허 등록번호 제 10-2382914 호, 등록일 2022년 03월 31일-->
-            <span class="tooltip"><b>Method and Apparatus for Relation Extraction between Entities</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    이경호, 이상학, 서승민, 오병국, "개체 간 관계 추출 방법 및 장치,"<br/>
-                    특허 출원번호 제 10-2020-0073918 호, 출원일 2020년 06월 17일, 특허 등록번호 제 10-2382914 호, 등록일 2022년 03월 31일
-                </div>
-            </div>
-            Kyung‑Ho Lee, Sanghak Lee, Seungmin Seo, and <b>Byungkook Oh</b><br/>
-            KR Patent No. 10-2382914, filed June 17, 2020. and issued March 31, 2022
-        </li>
-        <li class="sparsest-list">
-            <!--<b>Byungkook Oh</b> and Kyong‑Ho Lee, ”Method and Apparatus for Completing Zero‑Shot Knowledge Graph Using Multi‑Hop Neighborhoods,” KR Patent Application No. 10‑2019‑0129123, filed October 17, 2019. Patent Pending.-->
-            <!--이경호, 오병국, "멀티 홉 이웃을 이용한 제로샷 지식 그래프 완성 방법 및 장치," 특허 출원번호 제 10-2019-0129123 호, 출원일 2019년 10월 17일, 특허 등록번호 제 10-2273136 호, 등록일 2021년 06월 29일-->
-            <span class="tooltip"><b>Method and Apparatus for Completing Zero‑Shot Knowledge Graph Using Multi‑Hop Neighborhoods</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    이경호, 오병국, "멀티 홉 이웃을 이용한 제로샷 지식 그래프 완성 방법 및 장치,"<br/>
-                    특허 출원번호 제 10-2019-0129123 호, 출원일 2019년 10월 17일, 특허 등록번호 제 10-2273136 호, 등록일 2021년 06월 29일
-                </div>
-            </div>
-            <b>Byungkook Oh</b> and Kyong‑Ho Lee <br/>
-            KR Patent No. 10-2273136, filed October 17, 2019. and issued June 29, 2021
-        </li>
-        <li class="sparsest-list">
-            <!--<b>Byungkook Oh</b> and Kyong‑Ho Lee, ”Method and Apparatus for Reconstructing Sentence Order through Topic‑Guided Coherence Modeling,” KR Patent Application No. 10‑2019‑0136138, filed October 30, 2019. Patent Pending.-->
-            <!--이경호, 오병국, "토픽 기반의 일관성 모델링을 통한 문장 순서 재구성 방법 및 장치," 특허 출원번호 제 10-2019-0136138 호, 출원일 2019년 10월 30일, 특허 등록번호 제 10-2329738 호, 등록일 2021년 11월 17일-->
-            <span class="tooltip"><b>Method and Apparatus for Reconstructing Sentence Order through Topic‑Guided Coherence Modeling</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    이경호, 오병국, "토픽 기반의 일관성 모델링을 통한 문장 순서 재구성 방법 및 장치,"<br/>
-                    특허 출원번호 제 10-2019-0136138 호, 출원일 2019년 10월 30일, 특허 등록번호 제 10-2329738 호, 등록일 2021년 11월 17일
-                </div>
-            </div>
-            <b>Byungkook Oh</b> and Kyong‑Ho Lee <br/>
-            KR Patent No. 10-2329738, filed October 30, 2019. and issued November 17, 2021
-        </li>
-        <li class="sparsest-list">
-            <!--<b>Byungkook Oh</b> and Kyong‑Ho Lee, ”Method and Apparatus for Completing Knowledge Graph Based on Convolutional Learning Using Multi‑Hop Neighborhoods,” KR Patent Application No. 10‑2019‑0040173, filed April 5, 2019. Patent Pending.-->
-            <!--이경호, 오병국, "멀티 홉 이웃을 이용한 컨볼루션 학습 기반의 지식 그래프 완성 방법 및 장치," 특허 출원번호 제 10-2019-0040173 호, 출원일 2019년 04월 05일, 특허 등록번호 제 10-2189811 호, 등록일 2020년 12월 04일-->
-            <span class="tooltip"><b>Method and Apparatus for Completing Knowledge Graph Based on Convolutional Learning Using Multi‑Hop Neighborhoods</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    이경호, 오병국, "멀티 홉 이웃을 이용한 컨볼루션 학습 기반의 지식 그래프 완성 방법 및 장치,"<br/>
-                    특허 출원번호 제 10-2019-0040173 호, 출원일 2019년 04월 05일, 특허 등록번호 제 10-2189811 호, 등록일 2020년 12월 04일
-                </div>
-            </div>
-            <b>Byungkook Oh</b> and Kyong‑Ho Lee <br/>
-            KR Patent No. 10-2189811, filed April 5, 2019. and issued December 04, 2020
-        </li>
-        <li class="sparsest-list">
-            <!--이경호, 오병국, "다수상황 간의 상관관계를 고려한 추천 시스템 및 방법," 특허 출원번호 제 10-2018-0000644 호, 출원일 2018년 01월 03일, 특허 등록번호 제 10-1997222 호, 등록일 2019년 07월 01일-->
-            <span class="tooltip"><b>Recommender System and Method Considering Correlations among Contexts</b></span><br/>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    이경호, 오병국, "다수상황 간의 상관관계를 고려한 추천 시스템 및 방법,"<br/>
-                    특허 출원번호 제 10-2018-0000644 호, 출원일 2018년 01월 03일, 특허 등록번호 제 10-1997222 호, 등록일 2019년 07월 01일
-                </div>
-            </div>
-            <b>Byungkook Oh</b> and Kyong‑Ho Lee <br/>
-            KR Patent No. 10‑1997222, filed January 03, 2018. and issued July 01, 2019
-        </li>
-    </ul>
+    <div id="patents"></div>
     <br/>
 
+    <!-- ########################################################### -->
+    <!-- # Research Projects                                         -->
+    <!-- ########################################################### -->
     <h2>Research Projects</h2>
-    <!-- Project Manager: 연구개발관리 (기획, 조언, 검증 등) -->
-    <!--     R\&D Supervision (planning, advice, verification, etc.) -->
-    <!-- Project Leader: 연구개발실무총괄 (기획, 제안, 개발, 검증 등) -->
-    <!--     General R\&D operation (planning, proposal, development, verification, etc.) -->
-    <ul>
-        <li class="sparsest-list">
-            <b>온톨로지 기반 멀티타입 상호작용 모델링 기술</b>, w/ Yonsei University (Prof. Kyong-Ho Lee)<br/>
-            <span class="small">Ontology-based Multi-type Interaction Modeling</span>
-            <ul>
-                <li><b>Project Manager</b>, 2022.12 - 2023.12</li>
-                <li>-</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>지식그래프 기반 사용자 의도 및 커뮤니티 탐색 기술</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    본 연구에서는 세밀한 사용자 의도 모델링 기술을 제안함으로써, 정교한 관계별 개체 정보와 의도 구성 요소에 대한 사용자 선호를 반영하여 사용자들의 유의미한 상호작용 의도를 추출함.
-                    이는 사용자 개개인의 선호도를 세밀하게 표현하는 개인 추천시스템에서 사용자의 선호 의도를 설명할 수 있는 기준이 됨. 또한, 생성된 상호작용 의도를 기준으로 구별된 성격을 가지는
-                    커뮤니티를 탐지함. 이는 모델 검증에 사용된 도메인뿐만 아니라, 사용자가 특정 대상과 상호작용하는 다양한 도메인의 네트워크로의 확장 및 활용이 가능할 것임. 단순히 유의미한
-                    커뮤니티를 탐지하는 데에 그치지 않고 커뮤니티 내의 사용자들의 공통적인 의도를 파악하여 커뮤니티 구성에 대한 설명성을 제공함
-                </div>
-            </div>
-            , w/ Yonsei University (Prof. Kyong-Ho Lee)<br/>
-            <span class="small">Knowledge Graph based Intent-Community Detection</span>
-            <ul>
-                <li><b>Project Manager</b>, 2021.12 - 2022.12</li>
-                <li>-</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    지식 그래프는 지식 표현을 위한 효과적인 데이터 모델로 실세계의 사실을 개체 및 개체 간의 의미적, 구조적 관계로 표현할 수 있음. 하지만 지식 그래프의 불완전성과 확장 가능성을
-                    고려하지 못하는 기존 학습 모델들로 인해 지속적으로 변화하는 현실을 반영하기 어려움. 이를 개선하기 위해 동적으로 진화하는 지식 그래프의 정보 품질 개선을 위한 심층 표현학습
-                    방법이 필요함
-                    <br/><br/>
-                    본 연구에서는 동적으로 진화하는 지식그래프의 정보 품질 개선을 위한 심층 표현학습 원천 기술개발을 위하여 총 3차년에 걸쳐 단계별 연구를 수행함. 1단계 연구는 기존에 보지 못한
-                    개체/관계가 추가되거나 기존 개체/관계가 변경되는 개방형 지식그래프를 대상으로 함. 새로 유입된 개체/관계를 일반화하고 타당성 판단(제로샷 추론)을 수행하기 위해 유입된 사실과
-                    공유하는 부가정보인 설명문, 개체 타입 등을 활용하여 벡터표현을 생성함. 2단계 연구는 개방형 지식그래프를 대상으로 제로샷 추론 수행 시, 새로 유입된 개체 및 관계와 이웃한
-                    그래프의 구조 정보를 분석 및 반영함. 이웃 정보에는 트리플의 타당성을 판단하는데 도움을 주는 연결 패턴 정보들이 들어있음. 3단계는 연속으로 새로운 개체/관계가 유입되는 동적
-                    진화형 지식그래프에서 안정적이고 확장가능한 벡터표현을 생성하기 위해 기존 표현학습 모델의 일부를 전이하여 새로운 모델을 개발함. 특히 벡터표현에 불확실성을 포함시키면서, 그래프가
-                    진화할 때마다 학습된 벡터표현을 점진적으로 갱신하는 방법을 연구함
-                    <br/><br/>
-                    The final goal of this study is to research about ''Deep Representation Learning for Improving the
-                    Information Quality of Dynamically Evolving Knowledge Graphs''. The first step of the study targets
-                    open knowledge graphs in which objects/relationships that have not been previously seen are added or
-                    existing objects/relationships are changed. In order to generalize the newly introduced
-                    object/relationship and perform validity judgment (zero shot inference), vector representation is
-                    generated using explanations and object types, which are additional information shared with the
-                    introduced facts. The study in the second stage analyzes and reflects the structural information of
-                    graphs adjacent to newly introduced objects and relationships when performing zero-shot inference on
-                    open knowledge graphs. Neighbor information contains connection pattern information that helps
-                    determine the validity of the triple. Step three develops a new model by transferring part of the
-                    existing representation learning model to generate stable and scalable vector representations in a
-                    dynamic evolutionary knowledge graph in which new objects/relations flow in successively. In
-                    particular, we study how to gradually update the learned vector representation whenever the graph
-                    evolves, including uncertainty in the vector representation.
-                </div>
-            </div>
-            , w/ 한국연구재단<br/>
-            <span class="small">Deep Representation Learning for Improving the Information Quality of Dynamically Evolving Knowledge Graphs</span>
-            <ul>
-                <li><b>Project Leader</b>, 2019.06 - 2020.12</li>
-                <li>제로용/퓨샷 지식 추론 학습 모델 개용 (GCN 등 활용)</li>
-                <li>심층 표현 학습 기반 지식 추론 모델 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <b>액티브 러닝을 활용한 다항 관계 지식 추출 및 구조화 기술 연구</b>, w/ NC소프트 R&D<br/>
-            <span class="small">Active Learning based N-ary Relation Extraction and Strucuralization</span>
-            <ul>
-                <li>Project Member, 2019.05 - 2020.12</li>
-                <li>한국어 데이터셋 구축</li>
-                <li>관계 추출 모델 개발 (tree-LSTM, Transformer 등 활용)</li>
-                <li>액티브 러닝 알고리즘 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>XAI (eXplainable AI) 기반 스마트 에너지 플랫폼 기술 개발</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    에너지 지식 그래프 기반 프로슈머 지향 차세대 전력 서비스 기술 개발을 위해 총 3개년 연구를 진행함. 1차년도: 전력 데이터의 통합 및 관리를 위한 프로슈머 지향 에너지 지식
-                    그래프를 설계함. 2차년도: 에너지 지식 그래프 최적화 및 서비스 추천을 위한 가상 데이터셋을 구축함. 3차년도: 친환경 전력 생산을 위한 발전설비 조합 예측 및 설명 알고리즘
-                    개발함
-                    <br/><br/>
-                    We had developed XAI-based technology for smart energy platform during 3years. The first phase of
-                    the project is to develop energy knowledge graph for prosumer which be used to integrate and manage
-                    electricity energy data. Then, we constructed the virtual dataset for energy knowledge graph
-                    optimization and recommendation service in the second phase. Lastly, we built generating unit
-                    combination service based on explainability for eco-friendly power generation.
-                </div>
-            </div>
-            , w/ 한전 전력연구원<br/>
-            <span class="small">Development of XAI-based Technology for Smart Energy Platform</span>
-            <ul>
-                <li><b>Project Leader</b>, 2018.03 - 2020.12</li>
-                <li>가상 마이크로그리드 데이터셋 구축</li>
-                <li>에너지 지식 그래프 설계 및 지식 추론 연구</li>
-                <li>수요예측 딥러닝/확률모형 융합 모델 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <span class="tooltip"><b>사물인터넷을 위한 복합 이벤트 처리 기반 개인맞춤 상황인지형 추천 시스템</b></span>
-            <div class="tooltip-hover">
-                <div class="tooltip-content">
-                    본 연구 과제의 최종 목표는 다양한 사물들이 협업하는 사물인터넷 환경에서 복합 이벤트를 식별하고, 이를 기반으로 개인맞춤 상황인지형 추천 시스템을 개발하는 것임. 전술한 다양한
-                    데이터 소스로부터 사용자의 선호를 분석하고 사물들이 제공하는 실시간 스트림 데이터를 처리하여 상황을 판단함. 그 후, 다음에 수행될 행동을 예측하며 예측된 행동에 따라 사용자와
-                    사물에게 최적의 서비스를 추천함. 최종적으로 성능의 향상을 위한 분산·병렬 처리를 수행함
-                    <br/><br/>
-                    The goal of this project is to develop personalized context-aware recommendation system that
-                    identifies complex events in the Internet of Things environment. The system analyzes user’s
-                    preference from the data source and decides the circumstance by processing the real-time stream
-                    data. Then the system predicts the user’s action and recommends the appropriate services based on
-                    it. The system exploits distributed, parallelized approach to improve the overall performance.
-                </div>
-            </div>
-            , w/ 한국연구재단<br/>
-            <span class="small">A Personalized Context-aware Recommendation System</span>
-            <ul>
-                <li><b>Project Leader</b>, 2016.06 - 2019.06</li>
-                <li>지식 추론 모델 개발 (CNN, TF, GCN 등 활용)</li>
-                <li>텐서 분해 기반 추천 시스템 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list">
-            <b>사용자 중심 지식그래프 스키마 확장 기술</b>, w/ NC소프트 R&D<br/>
-            <span class="small">User-centeric Knowledge Graph Schema Expansion Technology</span>
-            <ul>
-                <li>Project Member, 2018.06 - 2019.02</li>
-                <li>한국어 데이터셋 구축</li>
-                <li>관계 추출 모델 개발 (Transformer 등 활용)</li>
-                <li>액티브 러닝 알고리즘 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list more-item">
-            <b>통합 주소/식별체계에 기반한 IoT 서비스 플랫폼</b>, w/ 미래창조과학부<br/>
-            <span class="small">Service Platform for Internet of Things</span>
-            <ul>
-                <li>Project Member, 2013.04 - 2018.04</li>
-                <li>기계 학습 기반 스트림 데이터 처리</li>
-                <li>구조적 데이터 생성 모델 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list more-item">
-            <b>IoV 데이터 저장 및 분석을 위한 자동차 클라우드 서비스 플랫폼</b>, w/ 미래창조과학부<br/>
-            <span class="small">Cloud-based Service Platform for IoV Data Storage and Analysis</span>
-            <ul>
-                <li>Project Member, 2016.06 - 2016.12</li>
-                <li>IoV 플랫폼 기술 검증</li>
-                <li>데이터셋 수집 및 구축</li>
-            </ul>
-        </li>
-        <li class="sparsest-list more-item">
-            <b>사물 웹에서 빅 데이터의 시맨틱 매쉬업을 위한 클라우드 컴퓨팅 프레임워크</b>, w/ 한국연구재단<br/>
-            <span class="small">A Cloud Computing Framework for Semantic Mashup of Big Data in the Web of Things</span>
-            <ul>
-                <li>Project Member, 2013.06 - 2016.06</li>
-                <li>웹 기반 데이터 매쉬업 프레임워크 개발</li>
-                <li>데이터 매쉬업 시나리오에 기반한 실제 모형 개발</li>
-            </ul>
-        </li>
-        <li class="sparsest-list more-item">
-            <b>제로에너지 커뮤니티에 적용한 가능한 시맨틱 서비스 및 기술 연구</b>, w/ 한국전자통신연구원(ETRI)<br/>
-            <span class="small">Semantic Services and Technologies for Realizing Zero-Energy Community</span>
-            <ul>
-                <li>Project Member, 2015.08 - 2015.12</li>
-                <li>프로슈머 기반 에너지 지식 그래프 설계</li>
-            </ul>
-        </li>
-        <li class="sparsest-list more-item">
-            <b>개인지식그래프에 기반한 시맨틱 검색 및 추천</b>, w/ LG전자<br/>
-            <span class="small">Semantic Search and Service Recommendation Based on Personal Knowledge Graph</span>
-            <ul>
-                <li>Project Member, 2015.03 - 2015.10</li>
-                <li>지식그래프 탐색 알고리즘 개발</li>
-                <li>텐서 분해 기반의 개인맞춤 상황인지형 추천 시스템 개발</li>
-            </ul>
-        </li>
-        <!--<a id="more_button" href="javascript:newsMore()"></a>-->
-    </ul>
+    <div id="research-projects"></div>
     <br/>
 
+    <!-- ########################################################### -->
+    <!-- # Honors & Awards                                           -->
+    <!-- ########################################################### -->
     <h2>Honors & Awards</h2>
-    <ul>
-        <li>BK21 PLUS Yonsei Scholarship in 2016‑2, 2018‑1, 2018‑2, 2019‑1, 2019‑2, and 2020‑1</li>
-        <li>Yonsei University Research Scholarship in 2019‑1 and 2020‑1</li>
-        <li>Undergraduate, Software Capstone Design (2014 fall semester), 1st prize</li>
-        <li>Undergraduate, 2013 Spring semester GPA honors</li>
-        <li>Undergraduate, National S&T(Science & Technology) Scholarship (Full Tuition for 2011)</li>
-    </ul>
+    <div id="honors-awards"></div>
 </div>
+<div>
+    <!-- ########################################################### -->
+    <!-- # Top Scroller                                              -->
+    <!-- ########################################################### -->
+    <a id="topScroller" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
 
-<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-<a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></a>
-
-<!-- https://www.w3schools.com/howto/howto_js_snackbar.asp -->
-<div id="snackbar">Copied</div>
-
+    <!-- ########################################################### -->
+    <!-- # Copier                                                    -->
+    <!-- ########################################################### -->
+    <div id="snackbar">Copied!!!</div>
+</div>
 <div class="footnotes">
     If you want to use this template, please cite <a href="https://github.com/bkoh509/bkoh509.github.io">this</a>.
 </div>

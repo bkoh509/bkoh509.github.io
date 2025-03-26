@@ -48,7 +48,7 @@
   
 "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation": 
   history: Presented 2021.12.07-10
-  cite: Junbeom Kim, Sihyun Jeong, Goeon Park, Kihoon Cha, Ilhyun Suh, and Byungkook Oh, "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation", 2021 International Conference on Data Mining Workshops (ICDMW'21), Auckland, New Zealand, 2021.12.07-10 (eight pages) 
+  cite: Junbeom Kim, Sihyun Jeong, Goeon Park, Kihoon Cha, Ilhyun Suh, and Byungkook Oh, "DynaPosGNN: Dynamic-Positional GNN for Next POI Recommendation", 2021 International Conference on Data Mining Workshops (ICDMW'21), Auckland, New Zealand, 2021.12.07-10 (eight sections)
   short_ko: 기존 next Point-Of-Interest (POI) 추천은 과거 trajectory 내 POI들의 방문 시간과 위치정보를 주로 활용하여 순차적인 패턴을 학습함. 본 논문에서는 좀 더 실용적인 시나리오인 유저의 다음 POI 도착 예정 시간에 따른 next POI 추천을 타겟으로함. 이를 위해, graph neural networks를 활용하여, next POI 도착 예정 시간과 user trajectories에서 추출한 user-POI/POI-POI graphs 사이의 상관관계를 학습함
   short_en: Existing next Point-Of-Interest (POI) recommendations mainly utilize the visit times and locations of POIs in the past trajectory to learn sequential patterns. In this paper, we address the more practical scenario of recommending the next POI based on the user's expected arrival time at the next POI. For this purpose, we leverage graph neural networks to learn the correlation between the next POI arrival time and user-POI/POI-POI graphs from user trajectories.
   long_ko: 

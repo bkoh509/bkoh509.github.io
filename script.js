@@ -20,7 +20,9 @@
 //
 // newsMore();
 
-// dragable/copyable
+/* ========================================================== */
+/*                     Dragable/Copyable                      */
+/* ========================================================== */
 document.getElementById('toggle').addEventListener('change', function () {
     if (this.checked) {
         console.log('Toggle is ON');
@@ -31,54 +33,18 @@ document.getElementById('toggle').addEventListener('change', function () {
     }
 });
 
-// show snackbar
-function snackbar() {
-  const x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
-}
+/* ========================================================== */
+/*                        Top Scroller                        */
+/* ========================================================== */
+const topScroller  = document.getElementById("topScroller");
 
-document.addEventListener("DOMContentLoaded", function () {
-    const clickTargets = document.querySelectorAll('.tooltip');
-
-    clickTargets.forEach(target => {
-        target.addEventListener('click', function () {
-            let is_copied = document.documentElement.style.getPropertyValue('--main-tooltip-display');
-            if (is_copied === 'block') {
-                // const siblingToCopy = this.parent.nextElementSibling; // Get the next sibling (.tooltip-hover)
-                const siblingToCopy = this.parentElement
-                // const textToCopy = siblingToCopy.querySelector(".tooltip-content").textContent;
-                const textToCopy = siblingToCopy.querySelector(".tooltip-content").innerText;
-
-                window.navigator.clipboard.writeText(textToCopy).then(() => snackbar())
-
-                // alert('Content copied to clipboard!');
-            } else {
-                // alert('Content do not copy to clipboard!');
-            }
-        });
-    });
+window.addEventListener("scroll", () => {
+    topScroller .style.display = window.scrollY > 20 ? "block" : "none";
 });
 
-// Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+topScroller .addEventListener("click", () => {
+    window.scrollTo({ top : 0 });
+});
 
 /* ========================================================== */
 /*                      Language Switcher                     */
@@ -87,14 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggler = document.getElementById('langToggle');
     const wrapper = document.getElementById('langWrapper');
 
-    // 토글 상태가 바뀔 때마다 실행
     toggler.addEventListener('change', () => {
         if (toggler.checked) {
-            // 체크되면 한국어 모드
             wrapper.classList.remove('lang-en');
             wrapper.classList.add('lang-ko');
         } else {
-            // 체크 해제되면 영어 모드
             wrapper.classList.remove('lang-ko');
             wrapper.classList.add('lang-en');
         }
@@ -102,27 +65,121 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ========================================================== */
-/*                        Pages Loader                        */
+/*                       Section Loader                       */
 /* ========================================================== */
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('./pages/research_interests-en.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('research-interests-en').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const pages = [
+        { url: './sections/research_interests_en.html', elementId: 'research-interests-en' },
+        { url: './sections/research_interests_ko.html', elementId: 'research-interests-ko' },
+        { url: './sections/education_experience.html', elementId: 'education-experience' },
+        { url: './sections/publications.html', elementId: 'publications' },
+        { url: './sections/research_projects.html', elementId: 'research-projects' },
+        { url: './sections/patents.html', elementId: 'patents' },
+        { url: './sections/honors_awards.html', elementId: 'honors-awards' }
+    ];
+
+    pages.forEach(page => {
+        fetch(page.url)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById(page.elementId).innerHTML = html;
+            })
+            .catch(error => {
+                console.error(`Error loading ${page.url}:`, error);
+            });
+    });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('./pages/research_interests-ko.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('research-interests-ko').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-});
+/* ========================================================== */
+/*                           Copier                           */
+/* ========================================================== */
+// function snackbar() {
+//   const x = document.getElementById("snackbar");
+//   x.className = "show";
+//   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
+// }
+//
+// document.addEventListener("DOMContentLoaded", function () {
+//     const clickTargets = document.querySelectorAll('.tooltip');
+//
+//     clickTargets.forEach(target => {
+//         target.addEventListener('click', function () {
+//             alert('clicked');
+//             let is_copied = document.documentElement.style.getPropertyValue('--main-tooltip-display').trim();
+//             if (is_copied === 'block') {
+//                 // const siblingToCopy = this.parent.nextElementSibling; // Get the next sibling (.tooltip-hover)
+//                 const siblingToCopy = this.parentElement
+//                 // const textToCopy = siblingToCopy.querySelector(".tooltip-content").textContent;
+//                 const textToCopy = siblingToCopy.querySelector(".tooltip-content").innerText;
+//
+//                 window.navigator.clipboard.writeText(textToCopy).then(() => snackbar())
+//
+//                 // alert('Content copied to clipboard!');
+//             } else {
+//                 // alert('Content do not copy to clipboard!');
+//             }
+//         });
+//     });
+// });
 
+function snackbar() {
+    const x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(() => {
+        x.className = x.className.replace("show", "");
+    }, 1000);
+}
+//
+// document.addEventListener("DOMContentLoaded", function () {
+//     const clickTargets = document.querySelectorAll('.tooltip');
+//     console.log(clickTargets);
+//
+//     clickTargets.forEach(target => {
+//         target.addEventListener('click', function () {
+//             console.log("clicked");
+//             const parent = this.parentElement;
+//             const tooltipHover = parent.querySelector('.tooltip-hover');
+//             const tooltipContent = tooltipHover.querySelector('.tooltip-content');
+//
+//             // 툴팁이 보일 때만 복사 (display !== 'none')
+//             const isVisible = getComputedStyle(tooltipHover).display !== 'none';
+//
+//             if (isVisible) {
+//                 const textToCopy = tooltipContent.innerText;
+//                 navigator.clipboard.writeText(textToCopy).then(() => snackbar());
+//             } else {
+//                 // 안 보일 때는 복사하지 않음
+//                 // console.log("Tooltip not visible, copy skipped.");
+//             }
+//         });
+//     });
+// });
+
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('tooltip')) {
+        const parent = event.target.parentElement;
+        const tooltipHover = parent.querySelector('.tooltip-hover');
+        const tooltipContent = tooltipHover.querySelector('.tooltip-content');
+
+        // 툴팁이 보일 때만 복사 (display !== 'none')
+        const isVisible = getComputedStyle(tooltipHover).display !== 'none';
+        console.log(isVisible);
+
+        if (isVisible) {
+            const textToCopy = tooltipContent.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => snackbar());
+        } else {
+            // 안 보일 때는 복사하지 않음
+            console.log("Tooltip not visible, copy skipped.");
+        }
+
+        // if (tooltipContent) {
+        //     const textToCopy = tooltipContent.innerText;
+        //     navigator.clipboard.writeText(textToCopy).then(() => {
+        //         const snackbar = document.getElementById("snackbar");
+        //         snackbar.className = "show";
+        //         setTimeout(() => snackbar.className = "", 1000);
+        //     });
+        // }
+    }
+});

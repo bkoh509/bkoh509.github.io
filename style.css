@@ -14,6 +14,8 @@ html, body {
     font-size: 17px; /* recommended */
     font-weight: 300;
 
+    scroll-behavior: smooth;
+
     /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
     @media screen and (max-device-width: 800px) {
         font-size: 25px;
@@ -60,8 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 1.5em;
-
-    margin: 0px 0 0px;
+    margin: 0;
     color: #393939;
     line-height: 1.1;
 
@@ -199,8 +200,9 @@ b {
 }
 /* ================================================= */
 
-
-/* ==================== TOGGLE ==================== */
+/* ========================================================== */
+/*                     Dragable/Copyable                      */
+/* ========================================================== */
 #toggle-wrapper {
     /*display: flex;*/
     /*align-items: center;*/
@@ -292,8 +294,6 @@ b {
 #toggle2:checked + .toggle2-label::before {
     left: 32px;
 }
-/* ================================================ */
-
 
 /* ==================== TOOLTIP ==================== */
 /* ToolTip (currently not use): https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
@@ -349,63 +349,7 @@ b {
     }
 /* ================================================= */
 
-
-/* ==================== SNACKBAR =================== */
-#snackbar {
-    display: none;
-    min-width: 50px;
-    margin-left: -25px; /* width 절반 */
-    background-color: #505050;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 8px 16px;
-    position: fixed;
-    z-index: 10;
-    left: 50%;
-    bottom: 30px;
-    font-size: 0.95em;
-}
-
-#snackbar.show {
-    display: block;
-    animation: fadein 0.5s, fadeout 0.5s 1.0s;
-}
-
-@keyframes fadein {
-    from {
-        bottom: 30px;
-        opacity: 0;
-    }
-    to {
-        bottom: 30px;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeout {
-    from {
-        bottom: 30px;
-        opacity: 1;
-    }
-    to {
-        bottom: 30px;
-        opacity: 0;
-    }
-}
-
-#myBtn {
-    display: none;
-    font-size: 2rem;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    z-index: 99;
-    cursor: pointer;
-    color: #035384;
-}
 /* ================================================= */
-
 .switch {
     position: relative;
     display: inline-block;
@@ -529,6 +473,24 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /* ========================================================== */
+/*                         Top Scroller                       */
+/* ========================================================== */
+#topScroller {
+    display: none;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    color: #003875;
+}
+
+#topScroller:hover {
+    cursor: pointer;
+    color: #0C5CAC;
+}
+
+/* ========================================================== */
 /*                      Language Switcher                     */
 /* ========================================================== */
 .lang-en .ko {
@@ -543,4 +505,50 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .lang-ko .ko {
     display: inline;
+}
+
+/* ========================================================== */
+/*                           Copier                           */
+/* ========================================================== */
+#snackbar {
+    display: none;
+    min-width: 50px;
+    margin-left: -25px; /* width 절반 */
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 16px;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    bottom: 30px;
+    font-size: 0.95em;
+}
+
+#snackbar.show {
+    display: block;
+    animation: fadein 0.5s, fadeout 0.5s 1.0s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 30px;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 30px;
+        opacity: 0;
+    }
 }
