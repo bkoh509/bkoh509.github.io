@@ -143,13 +143,13 @@ b {
 .footnotes {
     font-size: 0.8em;
     text-align: center;
-    margin: 0 auto;
     max-width: 900px;
-    /*padding: 30px;*/
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
-/* ==================== HEADER ==================== */
+/* ========================================================== */
+/*                          Profile                           */
+/* ========================================================== */
 #profile {
     display: flex;
     align-items: center;
@@ -158,8 +158,8 @@ b {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    overflow: hidden; /* 내용물이 넘어갈 때 다른 div안에 숨겨지도록 */
-    max-height: 210px; /* height를 고정해야 내용물이 넘어갈때 #profile이 같이 안 커짐 */
+    max-height: 300px; /* height를 고정해야 내용물이 넘어갈때 #profile이 같이 안 커짐 */
+    /*overflow: hidden; !* 내용물이 넘어갈 때 다른 div안에 숨겨지도록 (근데 위에서 안 커지게 해서 지금은 의미없음) *!*/
 
      /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
     @media screen and (max-device-width: 800px) {
@@ -198,7 +198,6 @@ b {
         height: 200px;
     }
 }
-/* ================================================= */
 
 /* ========================================================== */
 /*                     Dragable/Copyable                      */
